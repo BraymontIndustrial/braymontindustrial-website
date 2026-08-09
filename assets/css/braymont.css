@@ -4971,3 +4971,10 @@ and
         width: 100%;
     }
 }
+
+/* Protective Coatings service hero */
+.service-detail-hero-coatings {
+    background:
+        url("../../images/pic03.jpg")
+        center center / cover no-repeat;
+}
