@@ -461,8 +461,8 @@ button {
 .main-nav-inner {
     width:
         min(
-            1220px,
-            calc(100% - 40px)
+            1380px,
+            calc(100% - 24px)
         );
 
     min-height:
@@ -494,11 +494,55 @@ button {
     justify-content:
         center;
 
-    min-width:
-        150px;
+   min-width:
+    auto;
 
     padding:
-        0 24px;
+    0 10px;
+
+    color:
+        var(--charcoal);
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size:
+        0.92rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.02em;
+
+    text-transform:
+        uppercase;
+
+    white-space:
+        nowrap;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}.nav-link {
+    position:
+        relative;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-width:
+        auto;
+
+    padding:
+        0 10px;
 
     color:
         var(--charcoal);
@@ -518,6 +562,9 @@ button {
 
     text-transform:
         uppercase;
+
+    white-space:
+        nowrap;
 
     transition:
         color 0.2s ease,
