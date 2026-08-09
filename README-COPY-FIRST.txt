@@ -28,3 +28,5 @@ The package intentionally does not include images.
 IMPORTANT:
 The Contact page uses phone/email links and an email project-info button.
 It does NOT pretend a server-side web form is active.
+
+V2 FIX: Projects and Safety hero sections now match the same visual height and text scale as the service pages.

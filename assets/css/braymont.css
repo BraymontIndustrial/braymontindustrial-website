@@ -4995,15 +4995,9 @@ and
     background: url("../../images/pic08.jpg") center center / cover no-repeat;
 }
 
-/* =========================================================
-   PROJECTS & SAFETY HERO
-   Same dimensions as service pages
-========================================================= */
-
 .standard-detail-hero {
     position: relative;
-    min-height: 620px;
-
+    min-height: 610px;
     display: flex;
     align-items: center;
 
@@ -5023,51 +5017,50 @@ and
 .standard-detail-hero .service-detail-hero-content {
     position: relative;
     z-index: 2;
-
     width: 100%;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding: 90px 0;
 }
 
 .standard-detail-hero h1 {
     max-width: 900px;
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(3.4rem, 7vw, 6.6rem);
+    font-weight: 600;
+    line-height: 0.96;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
 }
 
 .standard-detail-hero .service-detail-lead {
-    max-width: 760px;
+    max-width: 780px;
+    margin: 26px 0 0;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
 }
 
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1100px) {
-
+@media (max-width: 820px) {
     .standard-detail-hero {
         min-height: 560px;
     }
 
+    .standard-detail-hero .service-detail-hero-content {
+        padding: 72px 0;
+    }
+
+    .standard-detail-hero h1 {
+        font-size: clamp(3rem, 13vw, 4.9rem);
+    }
 }
 
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 820px) {
-
+@media (max-width: 560px) {
     .standard-detail-hero {
         min-height: 520px;
-        align-items: center;
     }
-
-    .standard-detail-hero .service-detail-hero-content {
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-
 }
+
 .contact-page-section {
     min-height: 650px;
 }
