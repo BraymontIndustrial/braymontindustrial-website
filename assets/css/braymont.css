@@ -4978,3 +4978,72 @@ and
         url("../../images/pic03.jpg")
         center center / cover no-repeat;
 }
+
+/* =========================================================
+   COMPLETE MULTI-PAGE SITE
+========================================================= */
+
+.service-detail-hero-surface-restoration {
+    background: url("../../images/pic05.jpg") center center / cover no-repeat;
+}
+
+.service-detail-hero-commercial-drywall {
+    background: url("../../images/pic04.jpg") center center / cover no-repeat;
+}
+
+.service-detail-hero-pressure-washing {
+    background: url("../../images/pic08.jpg") center center / cover no-repeat;
+}
+
+.standard-detail-hero {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.contact-page-section {
+    min-height: 650px;
+}
+
+.contact-direct-card h2 {
+    margin: 0 0 18px;
+    color: var(--charcoal);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(2rem, 3.4vw, 3rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.contact-checklist {
+    margin: 22px 0 28px;
+    padding-left: 20px;
+    color: var(--text);
+    line-height: 1.9;
+}
+
+.contact-checklist li::marker {
+    color: var(--blue);
+}
+
+/* Keep eight desktop navigation items usable across common widths. */
+@media (min-width: 821px) {
+    .main-nav-inner {
+        width: min(1500px, calc(100% - 24px)) !important;
+    }
+
+    .main-nav .nav-link {
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 821px) {
+    .main-nav .nav-link {
+        font-size: 18px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}
