@@ -1,480 +1,535 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-	/* ==================================================
-	   MOBILE SPLASH ONLY
-	   Desktop: no splash
-	   Mobile <= 820px:
-	   0-1s swipe in
-	   1-2s hold
-	   2-2.7s logo fade
-	   2.75-3.7s swipe out
-	================================================== */
+    /* ==================================================
+       BRAYMONT MOBILE SPLASH
+       Timing matched to reference website
 
-	const splash =
-		document.getElementById("braymont-splash");
+       0.00s  White screen
+       0.04s  Blue swipe starts
+       0.74s  Blue swipe finishes
+       0.90s  Logo fade in starts
+       1.32s  Logo fully visible
+       3.32s  Logo fade out starts
+       3.51s  Logo gone
+       3.51s  Blue swipe out starts
+       4.17s  Blue swipe out finishes
+       4.25s  Splash removed
+    ================================================== */
 
-	const mobileMedia =
-		window.matchMedia("(max-width: 820px)");
+    const splash =
+        document.getElementById("braymont-splash");
 
-	const runMobileSplash = () => {
+    const isMobile =
+        window.innerWidth <= 820;
 
-		if (!splash) {
-			return;
-		}
 
-		/* Desktop = remove splash immediately */
+    if (splash) {
 
-		if (!mobileMedia.matches) {
+        if (!isMobile) {
 
-			splash.remove();
+            splash.remove();
 
-			return;
-		}
+        } else {
 
+            /* Reset splash state */
 
-		/* Show splash logo */
+            splash.classList.remove(
+                "show-logo",
+                "hide-logo",
+                "splash-exit"
+            );
 
-		window.setTimeout(() => {
 
-			if (
-				!document.body.contains(splash)
-			) {
-				return;
-			}
+            /* Make sure splash is visible */
 
-			splash.classList.add(
-				"show-logo"
-			);
+            splash.style.display = "flex";
 
-		}, 2000);
 
+            /* Force browser to restart animations */
 
-		/* Swipe splash out */
+            splash.style.animation = "none";
 
-		window.setTimeout(() => {
+            void splash.offsetWidth;
 
-			if (
-				!document.body.contains(splash)
-			) {
-				return;
-			}
+            splash.style.animation = "";
 
-			splash.classList.add(
-				"splash-exit"
-			);
 
-		}, 2750);
+            /* ==================================================
+               LOGO FADE IN
+               Starts at 0.90s
+            ================================================== */
 
+            window.setTimeout(
+                function () {
 
-		/* Remove splash */
+                    if (
+                        !document.body.contains(
+                            splash
+                        )
+                    ) {
 
-		window.setTimeout(() => {
+                        return;
 
-			if (
-				!document.body.contains(splash)
-			) {
-				return;
-			}
+                    }
 
-			splash.remove();
 
-		}, 3800);
+                    splash.classList.add(
+                        "show-logo"
+                    );
 
-	};
+                },
+                900
+            );
 
-	runMobileSplash();
 
+            /* ==================================================
+               LOGO FADE OUT
+               Starts at 3.32s
+            ================================================== */
 
-	/* ==================================================
-	   MOBILE NAVIGATION
-	================================================== */
+            window.setTimeout(
+                function () {
 
-	const menuToggle =
-		document.querySelector(
-			".mobile-menu-toggle"
-		);
+                    if (
+                        !document.body.contains(
+                            splash
+                        )
+                    ) {
 
-	const nav =
-		document.getElementById(
-			"main-nav"
-		);
+                        return;
 
+                    }
 
-	const closeMobileMenu = () => {
 
-		document.body
-			.classList
-			.remove(
-				"menu-open"
-			);
+                    splash.classList.add(
+                        "hide-logo"
+                    );
 
-		if (menuToggle) {
+                },
+                3320
+            );
 
-			menuToggle.setAttribute(
-				"aria-expanded",
-				"false"
-			);
 
-		}
+            /* ==================================================
+               BLUE SWIPE OUT
+               Starts after logo has faded away
+            ================================================== */
 
-	};
+            window.setTimeout(
+                function () {
 
+                    if (
+                        !document.body.contains(
+                            splash
+                        )
+                    ) {
 
-	if (
-		menuToggle &&
-		nav
-	) {
+                        return;
 
-		menuToggle.addEventListener(
-			"click",
-			() => {
+                    }
 
-				const isOpen =
-					document.body
-						.classList
-						.toggle(
-							"menu-open"
-						);
 
-				menuToggle.setAttribute(
-					"aria-expanded",
-					String(isOpen)
-				);
+                    splash.classList.add(
+                        "splash-exit"
+                    );
 
-			}
-		);
+                },
+                3510
+            );
 
-	}
 
+            /* ==================================================
+               REMOVE SPLASH
+            ================================================== */
 
-	/* ==================================================
-	   NAVIGATION LINKS
-	================================================== */
+            window.setTimeout(
+                function () {
 
-	const navLinks =
-		Array.from(
-			document.querySelectorAll(
-				".nav-link[href^='#']"
-			)
-		);
+                    if (
+                        !document.body.contains(
+                            splash
+                        )
+                    ) {
 
+                        return;
 
-	const sections =
-		navLinks
-			.map((link) => {
+                    }
 
-				const href =
-					link.getAttribute(
-						"href"
-					);
 
-				if (
-					!href ||
-					href === "#"
-				) {
+                    splash.remove();
 
-					return null;
+                },
+                4250
+            );
 
-				}
+        }
 
-				const target =
-					document.querySelector(
-						href
-					);
+    }
 
-				return target
-					? {
-						link,
-						target
-					}
-					: null;
 
-			})
-			.filter(Boolean);
 
+    /* ==================================================
+       MOBILE NAVIGATION
+    ================================================== */
 
-	/* ==================================================
-	   ACTIVE NAVIGATION
-	================================================== */
+    const menuToggle =
+        document.querySelector(
+            ".mobile-menu-toggle"
+        );
 
-	const setActiveLink =
-		(currentSection) => {
 
-			sections.forEach(
-				(section) => {
+    const nav =
+        document.getElementById(
+            "main-nav"
+        );
 
-					section.link
-						.classList
-						.toggle(
-							"active",
-							section ===
-								currentSection
-						);
 
-				}
-			);
+    function closeMobileMenu() {
 
-		};
+        document.body.classList.remove(
+            "menu-open"
+        );
 
 
-	/* ==================================================
-	   UPDATE ACTIVE LINK WHILE SCROLLING
-	================================================== */
+        if (menuToggle) {
 
-	const updateActiveNavigation =
-		() => {
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
 
-			if (
-				!sections.length
-			) {
-				return;
-			}
+        }
 
-			/*
-				This point determines which
-				section is considered active.
-			*/
+    }
 
-			const referencePoint =
-				window.scrollY + 240;
 
-			let currentSection =
-				sections[0];
+    if (
+        menuToggle &&
+        nav
+    ) {
 
+        menuToggle.addEventListener(
+            "click",
+            function () {
 
-			sections.forEach(
-				(section) => {
+                const isOpen =
+                    document.body
+                        .classList
+                        .toggle(
+                            "menu-open"
+                        );
 
-					const sectionTop =
-						section.target
-							.offsetTop;
 
-					if (
-						sectionTop <=
-						referencePoint
-					) {
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    String(isOpen)
+                );
 
-						currentSection =
-							section;
+            }
+        );
 
-					}
+    }
 
-				}
-			);
 
 
-			setActiveLink(
-				currentSection
-			);
+    /* ==================================================
+       NAVIGATION LINKS
+    ================================================== */
 
-		};
+    const navLinks =
+        Array.from(
+            document.querySelectorAll(
+                ".nav-link[href^='#']"
+            )
+        );
 
 
-	updateActiveNavigation();
+    const sections =
+        navLinks
+            .map(
+                function (link) {
 
+                    const href =
+                        link.getAttribute(
+                            "href"
+                        );
 
-	window.addEventListener(
-		"scroll",
-		updateActiveNavigation,
-		{
-			passive: true
-		}
-	);
 
+                    if (
+                        !href ||
+                        href === "#"
+                    ) {
 
-	/* ==================================================
-	   NAV CLICK
-	   Immediately activate clicked category
-	================================================== */
+                        return null;
 
-	sections.forEach(
-		(section) => {
+                    }
 
-			section.link.addEventListener(
-				"click",
-				(event) => {
 
-					event.preventDefault();
+                    const target =
+                        document.querySelector(
+                            href
+                        );
 
 
-					/*
-						Make clicked navigation
-						category active immediately.
-					*/
+                    if (!target) {
 
-					setActiveLink(
-						section
-					);
+                        return null;
 
+                    }
 
-					/*
-						Close mobile menu.
-					*/
 
-					closeMobileMenu();
+                    return {
+                        link: link,
+                        target: target
+                    };
 
+                }
+            )
+            .filter(Boolean);
 
-					/*
-						Smooth scroll to section.
-					*/
 
-					section.target.scrollIntoView({
-						behavior:
-							"smooth",
 
-						block:
-							"start"
-					});
+    /* ==================================================
+       ACTIVE NAVIGATION
+    ================================================== */
 
-				}
-			);
+    function setActiveLink(
+        currentSection
+    ) {
 
-		}
-	);
+        sections.forEach(
+            function (section) {
 
+                section.link
+                    .classList
+                    .toggle(
+                        "active",
+                        section ===
+                            currentSection
+                    );
 
-	/* ==================================================
-	   OTHER INTERNAL LINKS
-	   Buttons such as Request Quote, View Services, etc.
-	================================================== */
+            }
+        );
 
-	document
-		.querySelectorAll(
-			'a[href^="#"]:not(.nav-link)'
-		)
-		.forEach(
-			(link) => {
+    }
 
-				link.addEventListener(
-					"click",
-					(event) => {
 
-						const href =
-							link.getAttribute(
-								"href"
-							);
 
-						if (
-							!href ||
-							href === "#"
-						) {
-							return;
-						}
+    /* ==================================================
+       UPDATE ACTIVE LINK ON SCROLL
+    ================================================== */
 
+    function updateActiveNavigation() {
 
-						const target =
-							document.querySelector(
-								href
-							);
+        if (
+            sections.length === 0
+        ) {
 
+            return;
 
-						if (!target) {
-							return;
-						}
+        }
 
 
-						event.preventDefault();
+        const referencePoint =
+            window.scrollY + 240;
 
 
-						closeMobileMenu();
+        let currentSection =
+            sections[0];
 
 
-						target.scrollIntoView({
-							behavior:
-								"smooth",
+        sections.forEach(
+            function (section) {
 
-							block:
-								"start"
-						});
+                const sectionTop =
+                    section.target.offsetTop;
 
-					}
-				);
 
-			}
-		);
+                if (
+                    sectionTop <=
+                    referencePoint
+                ) {
 
+                    currentSection =
+                        section;
 
-	/* ==================================================
-	   ESC CLOSES MOBILE MENU
-	================================================== */
+                }
 
-	window.addEventListener(
-		"keydown",
-		(event) => {
+            }
+        );
 
-			if (
-				event.key ===
-					"Escape" &&
-				document.body
-					.classList
-					.contains(
-						"menu-open"
-					)
-			) {
 
-				closeMobileMenu();
+        setActiveLink(
+            currentSection
+        );
 
-			}
+    }
 
-		}
-	);
 
+    updateActiveNavigation();
 
-	/* ==================================================
-	   RESET MOBILE MENU WHEN RESIZING TO DESKTOP
-	================================================== */
 
-	const handleResponsiveChange =
-		(event) => {
+    window.addEventListener(
+        "scroll",
+        updateActiveNavigation,
+        {
+            passive: true
+        }
+    );
 
-			/*
-				When browser becomes desktop.
-			*/
 
-			if (
-				!event.matches
-			) {
 
-				closeMobileMenu();
+    /* ==================================================
+       NAVIGATION CLICK
+    ================================================== */
 
+    sections.forEach(
+        function (section) {
 
-				if (
-					splash &&
-					document.body.contains(
-						splash
-					)
-				) {
+            section.link
+                .addEventListener(
+                    "click",
+                    function (event) {
 
-					splash.remove();
+                        event.preventDefault();
 
-				}
 
-			}
+                        setActiveLink(
+                            section
+                        );
 
-		};
 
+                        closeMobileMenu();
 
-	if (
-		typeof mobileMedia
-			.addEventListener ===
-		"function"
-	) {
 
-		mobileMedia.addEventListener(
-			"change",
-			handleResponsiveChange
-		);
+                        section.target
+                            .scrollIntoView({
+                                behavior:
+                                    "smooth",
 
-	} else if (
-		typeof mobileMedia
-			.addListener ===
-		"function"
-	) {
+                                block:
+                                    "start"
+                            });
 
-		mobileMedia.addListener(
-			handleResponsiveChange
-		);
+                    }
+                );
 
-	}
+        }
+    );
+
+
+
+    /* ==================================================
+       OTHER INTERNAL LINKS
+    ================================================== */
+
+    document
+        .querySelectorAll(
+            'a[href^="#"]:not(.nav-link)'
+        )
+        .forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function (event) {
+
+                        const href =
+                            link.getAttribute(
+                                "href"
+                            );
+
+
+                        if (
+                            !href ||
+                            href === "#"
+                        ) {
+
+                            return;
+
+                        }
+
+
+                        const target =
+                            document.querySelector(
+                                href
+                            );
+
+
+                        if (!target) {
+
+                            return;
+
+                        }
+
+
+                        event.preventDefault();
+
+
+                        closeMobileMenu();
+
+
+                        target.scrollIntoView({
+                            behavior:
+                                "smooth",
+
+                            block:
+                                "start"
+                        });
+
+                    }
+                );
+
+            }
+        );
+
+
+
+    /* ==================================================
+       ESC CLOSES MOBILE MENU
+    ================================================== */
+
+    window.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key ===
+                    "Escape" &&
+                document.body
+                    .classList
+                    .contains(
+                        "menu-open"
+                    )
+            ) {
+
+                closeMobileMenu();
+
+            }
+
+        }
+    );
+
+
+
+    /* ==================================================
+       RESIZE
+    ================================================== */
+
+    window.addEventListener(
+        "resize",
+        function () {
+
+            if (
+                window.innerWidth >
+                820
+            ) {
+
+                closeMobileMenu();
+
+            }
+
+        }
+    );
 
 });

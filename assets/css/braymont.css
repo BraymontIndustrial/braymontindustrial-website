@@ -2224,7 +2224,7 @@ button {
 
         animation:
             mobileSplashIn
-            1s
+            0.85s
             cubic-bezier(
                 .77,
                 0,
@@ -2300,7 +2300,7 @@ button {
     #braymont-splash.splash-exit {
         animation:
             mobileSplashOut
-            0.95s
+            0.85s
             cubic-bezier(
                 .77,
                 0,
@@ -4272,32 +4272,24 @@ h6 {
 }
 
 /* =========================================================
-   MOBILE SPLASH — FINAL SAFEGUARD
-   Swipe in -> logo fade -> swipe out
+   BRAYMONT MOBILE SPLASH — FINAL
+   White -> Blue swipe in -> Logo fade in -> Hold
+   -> Logo fade out -> Blue swipe out -> Website
 ========================================================= */
+
+@media (min-width: 821px) {
+    #braymont-splash {
+        display: none !important;
+    }
+}
 
 @media (max-width: 820px) {
 
     #braymont-splash {
-        display: flex !important;
         position: fixed !important;
         inset: 0 !important;
         z-index: 999999 !important;
 
-        align-items: center !important;
-        justify-content: center !important;
-
-        transform: translateX(-100%);
-        animation:
-            mobileSplashIn
-            1s
-            cubic-bezier(.77, 0, .18, 1)
-            forwards !important;
-
-        will-change: transform;
-    }
-
-    #braymont-splash .splash-content {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -4305,35 +4297,151 @@ h6 {
         width: 100% !important;
         height: 100% !important;
 
-        opacity: 0;
-        transform: scale(0.97);
+        background: #ffffff !important;
+        overflow: hidden !important;
+
+        transform: none !important;
+        animation: none !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
-    #braymont-splash.show-logo .splash-content {
+    #braymont-splash::before {
+        content: "" !important;
+
+        position: absolute !important;
+        inset: 0 !important;
+
+        z-index: 1 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        background: #1767B9 !important;
+
+        transform: translate3d(-100%, 0, 0);
+
         animation:
-            mobileSplashLogoIn
-            0.7s
-            ease
+            braymontBlueSwipeIn
+            0.70s
+            cubic-bezier(0.76, 0, 0.24, 1)
+            0.04s
             forwards !important;
+
+        will-change: transform;
+        backface-visibility: hidden;
     }
 
-    #braymont-splash.splash-exit {
+    #braymont-splash .splash-content {
+        position: relative !important;
+        z-index: 2 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+
+        pointer-events: none;
+    }
+
+    #braymont-splash .splash-logo,
+    #braymont-splash .splash-content img {
+        position: relative !important;
+        z-index: 2 !important;
+
+        display: block !important;
+
+        width: min(340px, 68vw) !important;
+        height: auto !important;
+        max-width: 82vw !important;
+
+        opacity: 0 !important;
+        transform: none !important;
+        animation: none !important;
+
+        filter:
+            brightness(0)
+            invert(1)
+            drop-shadow(0 8px 20px rgba(0, 0, 0, 0.18))
+            !important;
+
+        transition:
+            opacity 0.42s ease-out !important;
+
+        will-change: opacity;
+    }
+
+    #braymont-splash.show-logo .splash-logo,
+    #braymont-splash.show-logo .splash-content img {
+        opacity: 1 !important;
+    }
+
+    #braymont-splash.hide-logo .splash-logo,
+    #braymont-splash.hide-logo .splash-content img {
+        opacity: 0 !important;
+
+        transition:
+            opacity 0.19s ease-out !important;
+    }
+
+    #braymont-splash.splash-exit::before {
         animation:
-            mobileSplashOut
-            0.95s
-            cubic-bezier(.77, 0, .18, 1)
+            braymontBlueSwipeOut
+            0.66s
+            cubic-bezier(0.76, 0, 0.24, 1)
             forwards !important;
     }
 }
 
+@keyframes braymontBlueSwipeIn {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+    }
 
-/* Reduced-motion users still receive the branded splash.
-   Only unrelated motion is reduced above. */
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes braymontBlueSwipeOut {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) and (max-width: 820px) {
 
     #braymont-splash {
         display: flex !important;
+        transform: none !important;
+        animation: none !important;
     }
 
-}
+    #braymont-splash::before {
+        animation:
+            braymontBlueSwipeIn
+            0.70s
+            cubic-bezier(0.76, 0, 0.24, 1)
+            0.04s
+            forwards !important;
+    }
 
+    #braymont-splash.splash-exit::before {
+        animation:
+            braymontBlueSwipeOut
+            0.66s
+            cubic-bezier(0.76, 0, 0.24, 1)
+            forwards !important;
+    }
+}
