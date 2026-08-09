@@ -56,6 +56,51 @@
 	/>
 
 	<link rel="stylesheet" href="assets/css/braymont.css?v=20260809-site" />
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@graph": [
+	    {
+	      "@type": "Organization",
+	      "@id": "https://braymontindustrial.com/#organization",
+	      "name": "Braymont Industrial LLC",
+	      "url": "https://braymontindustrial.com/",
+	      "logo": "https://braymontindustrial.com/images/braymont-logo2.png",
+	      "email": "office@braymontindustrial.com",
+	      "telephone": "+1-704-453-0615",
+	      "areaServed": [
+	        {"@type": "State", "name": "North Carolina"},
+	        {"@type": "State", "name": "South Carolina"}
+	      ],
+	      "knowsAbout": [
+	        "Commercial Painting",
+	        "Industrial Painting",
+	        "Protective Coatings",
+	        "Commercial Drywall",
+	        "Surface Restoration",
+	        "Pressure Washing"
+	      ]
+	    },
+	    {
+	      "@type": "WebSite",
+	      "@id": "https://braymontindustrial.com/#website",
+	      "url": "https://braymontindustrial.com/",
+	      "name": "Braymont Industrial",
+	      "publisher": {"@id": "https://braymontindustrial.com/#organization"}
+	    },
+	    {
+	      "@type": "WebPage",
+	      "@id": "https://braymontindustrial.com/#webpage",
+	      "url": "https://braymontindustrial.com/",
+	      "name": "Braymont Industrial | Commercial & Industrial Specialty Contracting",
+	      "description": "Braymont Industrial provides commercial and industrial painting, protective coatings, drywall, surface restoration and pressure washing throughout the Carolinas.",
+	      "isPartOf": {"@id": "https://braymontindustrial.com/#website"},
+	      "about": {"@id": "https://braymontindustrial.com/#organization"}
+	    }
+	  ]
+	}
+	</script>
 </head>
 
 
@@ -215,6 +260,7 @@
 
         <!-- COMPANY NAME -->
         <h1>
+            Commercial &amp; Industrial Specialty Contracting
         </h1>
 
 
@@ -230,8 +276,11 @@
 
         <!-- SERVICES -->
         <p class="hero-services">
-            Painting • Protective Coatings • Drywall •
-            Surface Restoration • <a href="/services/pressure-washing/">Pressure Washing</a>
+            <a href="/services/industrial-painting/">Painting</a> •
+            <a href="/services/protective-coatings/">Protective Coatings</a> •
+            <a href="/services/commercial-drywall/">Drywall</a> •
+            <a href="/services/surface-restoration/">Surface Restoration</a> •
+            <a href="/services/pressure-washing/">Pressure Washing</a>
         </p>
 
 
@@ -421,10 +470,10 @@
 							</ul>
 
 							<a
-								href="#contact"
+								href="/services/industrial-painting/"
 								class="text-link"
 							>
-								Discuss Painting Scope
+								View Painting Services
 							</a>
 
 						</div>
@@ -475,10 +524,10 @@
 							</ul>
 
 							<a
-								href="#contact"
+								href="/services/protective-coatings/"
 								class="text-link"
 							>
-								Discuss Coating Scope
+								View Coating Services
 							</a>
 
 						</div>
@@ -527,7 +576,7 @@
 							</ul>
 
 							<a
-								href="#contact"
+								href="/services/commercial-drywall/"
 								class="text-link"
 							>
 								View Drywall Services
@@ -580,7 +629,7 @@
 							</ul>
 
 							<a
-								href="#contact"
+								href="/services/surface-restoration/"
 								class="text-link"
 							>
 								View Restoration Services
@@ -630,7 +679,7 @@
 							</ul>
 
 							<a
-								href="#contact"
+								href="/services/pressure-washing/"
 								class="text-link"
 							>
 								View Pressure Washing Services
@@ -696,7 +745,7 @@
 
 
 					<a
-						href="#contact"
+						href="/contact/"
 						class="btn btn-primary"
 					>
 						Discuss Your Project
@@ -738,6 +787,10 @@
 						industrial environments.
 					</p>
 
+					<a href="/projects/" class="text-link">
+						View Project Capabilities
+					</a>
+
 				</div>
 
 
@@ -772,6 +825,10 @@
 
 				</div>
 
+
+				<a href="/safety/" class="text-link">
+					View Safety &amp; Work Practices
+				</a>
 
 				<div class="values-grid">
 
@@ -1023,7 +1080,9 @@
 							</strong>
 
 							<span>
-								North Carolina &amp; South Carolina
+								<a href="/locations/north-carolina/">North Carolina</a>
+								&amp;
+								<a href="/locations/south-carolina/">South Carolina</a>
 							</span>
 
 						</div>
@@ -1034,152 +1093,36 @@
 				</div>
 
 
-				<form
-					class="quote-form"
-					action="#"
-					method="post"
-				>
+				<div class="quote-form contact-direct-card">
 
+					<span class="eyebrow">
+						Project Information
+					</span>
 
-					<div class="form-grid">
+					<h2>
+						What to include when contacting us
+					</h2>
 
+					<ul class="contact-checklist">
+						<li>Project name and location</li>
+						<li>Requested service or trade scope</li>
+						<li>Approximate schedule or bid due date</li>
+						<li>Drawings, photos or scope documents if available</li>
+						<li>Best contact information for follow-up</li>
+					</ul>
 
-						<label>
-
-							<span>
-								Name
-							</span>
-
-							<input
-								type="text"
-								name="name"
-								required
-							/>
-
-						</label>
-
-
-						<label>
-
-							<span>
-								Company
-							</span>
-
-							<input
-								type="text"
-								name="company"
-							/>
-
-						</label>
-
-
-						<label>
-
-							<span>
-								Email
-							</span>
-
-							<input
-								type="email"
-								name="email"
-								required
-							/>
-
-						</label>
-
-
-						<label>
-
-							<span>
-								Phone
-							</span>
-
-							<input
-								type="tel"
-								name="phone"
-							/>
-
-						</label>
-
-
-						<label class="full">
-
-							<span>
-								Service Needed
-							</span>
-
-							<select name="service">
-
-								<option value="">
-									Select a service
-								</option>
-
-								<option value="painting">
-									Commercial &amp; Industrial Painting
-								</option>
-
-								<option value="coatings">
-									Protective Coatings
-								</option>
-
-								<option value="drywall">
-									Drywall
-								</option>
-
-								<option value="restoration">
-									Surface Restoration
-								</option>
-
-								<option value="pressure-washing">
-									Pressure Washing
-								</option>
-
-							</select>
-
-						</label>
-
-
-						<label class="full">
-
-							<span>
-								Project Location
-							</span>
-
-							<input
-								type="text"
-								name="location"
-							/>
-
-						</label>
-
-
-						<label class="full">
-
-							<span>
-								Project Details
-							</span>
-
-							<textarea
-								name="message"
-								rows="5"
-								required
-							></textarea>
-
-						</label>
-
-
-					</div>
-
-
-					<button
-						type="submit"
+					<a
 						class="btn btn-primary form-submit"
+						href="mailto:office@braymontindustrial.com?subject=Project%20Quote%20Request"
 					>
-						Submit Quote Request
-					</button>
+						Email Project Information
+					</a>
 
+					<a href="/contact/" class="text-link">
+						View Contact Page
+					</a>
 
-				</form>
+				</div>
 
 
 			</div>
@@ -1221,15 +1164,15 @@
 				</h3>
 
 				<p>
-					Painting
+					<a href="/services/industrial-painting/">Painting</a>
 					<br />
-					Protective Coatings
+					<a href="/services/protective-coatings/">Protective Coatings</a>
 					<br />
-					Drywall
+					<a href="/services/commercial-drywall/">Commercial Drywall</a>
 					<br />
-					Surface Restoration
+					<a href="/services/surface-restoration/">Surface Restoration</a>
 					<br />
-					Pressure Washing
+					<a href="/services/pressure-washing/">Pressure Washing</a>
 				</p>
 
 			</div>
@@ -1265,9 +1208,9 @@
 				</h3>
 
 				<p>
-					North Carolina
+					<a href="/locations/north-carolina/">North Carolina</a>
 					<br />
-					South Carolina
+					<a href="/locations/south-carolina/">South Carolina</a>
 				</p>
 
 			</div>
