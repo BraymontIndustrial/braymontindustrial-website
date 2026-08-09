@@ -5107,3 +5107,25 @@ and
         padding-right: 8px !important;
     }
 }
+
+
+/* =========================================================
+   PROJECTS & SAFETY HERO ALIGNMENT FIX
+   Match service-page centered content positioning
+========================================================= */
+
+.standard-detail-hero .service-detail-hero-content {
+    width: min(1180px, calc(100% - 48px)) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media (max-width: 820px) {
+    .standard-detail-hero .service-detail-hero-content {
+        width: min(100% - 36px, 1180px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
