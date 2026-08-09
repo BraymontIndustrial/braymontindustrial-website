@@ -5231,15 +5231,22 @@ and
     }
 
     .main-nav .nav-link:not(:last-child)::after {
-        content: "" !important;
-        position: absolute !important;
-        right: 0 !important;
-        top: 30% !important;
-        width: 1px !important;
-        height: 40% !important;
-        background: #707070 !important;
-        opacity: 1 !important;
-    }
+    content: "" !important;
+
+    position: absolute !important;
+
+    right: 0 !important;
+
+    top: 50% !important;
+
+    width: 1px !important;
+    height: 22px !important;
+
+    transform: translateY(-50%) !important;
+
+    background: #707070 !important;
+    opacity: 1 !important;
+}
 
     .main-nav .nav-link::before {
         content: "" !important;
