@@ -5299,4 +5299,26 @@ and
         font-size: 18px !important;
     }
 }
+/* =========================================================
+   MARKET / INDUSTRY ICONS
+========================================================= */
 
+.market-icon {
+    width: 100%;
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+}
+
+.market-icon-image {
+    width: 155px;
+    height: 115px;
+
+    display: block;
+
+    object-fit: contain;
+}
