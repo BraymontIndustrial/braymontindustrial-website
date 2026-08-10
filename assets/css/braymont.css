@@ -5416,3 +5416,61 @@ and
     }
 
 }
+/* =========================================================
+   PROJECT CAPABILITIES — GRAPHICS
+========================================================= */
+
+.project-service-icon {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+}
+
+.project-service-icon-image {
+    display: block;
+
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* TABLET */
+@media screen and (max-width: 980px) {
+
+    .project-service-icon {
+        height: 175px;
+    }
+
+    .project-service-icon-image {
+        max-width: 260px;
+        height: 165px;
+    }
+
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 736px) {
+
+    .project-service-icon {
+        height: 165px;
+        margin-bottom: 14px;
+    }
+
+    .project-service-icon-image {
+        max-width: 250px;
+        height: 155px;
+    }
+
+}
