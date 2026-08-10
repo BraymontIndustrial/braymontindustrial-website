@@ -1,4 +1,4 @@
-/* =========================================================
+﻿/* =========================================================
    BRAYMONT INDUSTRIAL
    Custom Commercial / Industrial Contractor Layout
 \========================================================= */
@@ -625,7 +625,7 @@ button {
         center;
 
     background:
-        url("../../images/pic01.jpg")
+        url("../../images/pic01.webp")
         center center /
         cover
         no-repeat;
@@ -1797,7 +1797,7 @@ button {
                 0.92
             )
         ),
-        url("../../images/pic07.jpg")
+        url("../../images/pic07.webp")
         center /
         cover
         no-repeat;
@@ -3032,7 +3032,7 @@ button {
         position: relative;
         z-index: 1;
 
-        /* Tamaño de letra */
+        /* TamaÃ±o de letra */
         font-family: "Montserrat", Arial, sans-serif;
         font-size: 18px !important;
         font-weight: 600;
@@ -3063,7 +3063,7 @@ button {
         /* Centrado con las letras */
         top: 50%;
 
-        /* Apenas más alto que las letras */
+        /* Apenas mÃ¡s alto que las letras */
         height: calc(1em + 4px);
 
         transform: translateY(-50%);
@@ -3133,7 +3133,7 @@ button {
 
 }
 /* =========================================================
-   DESKTOP NAV — WIDER LINK SPACING
+   DESKTOP NAV â€” WIDER LINK SPACING
    ONLY CHANGES WIDTH
 \========================================================= */
 
@@ -3147,7 +3147,7 @@ button {
 
 }
 /* =========================================================
-   NAVBAR ONLY — BEBAS NEUE CLEAN
+   NAVBAR ONLY â€” BEBAS NEUE CLEAN
 \========================================================= */
 
 @media (min-width: 821px) {
@@ -3169,7 +3169,7 @@ button {
 
 }
 /* =========================================================
-   BRAYMONT — DESKTOP HEADER ACTIONS FINAL
+   BRAYMONT â€” DESKTOP HEADER ACTIONS FINAL
    Quote / Location / Email
 \========================================================= */
 
@@ -3387,7 +3387,7 @@ button {
 
 
 /* =========================================================
-   TABLET — KEEP HEADER FROM OVERFLOWING
+   TABLET â€” KEEP HEADER FROM OVERFLOWING
 \========================================================= */
 
 @media (min-width: 821px) and (max-width: 1250px) {
@@ -3956,11 +3956,11 @@ button {
 
 }
 /* =========================================================
-   HEADER ICONS — POSITION + SIZE
+   HEADER ICONS â€” POSITION + SIZE
 \========================================================= */
 
 /* =========================================================
-   HEADER ICONS — FINAL CLEAN VERSION
+   HEADER ICONS â€” FINAL CLEAN VERSION
 \========================================================= */
 
 @media (min-width: 821px) {
@@ -4022,12 +4022,12 @@ button {
     object-position: center !important;
 }
 
-/* LOCATION — compensación visual */
+/* LOCATION â€” compensaciÃ³n visual */
 .header-icon-button img[src*="icon-quote"] {
     width: 35px !important;
     height: 35px !important;
 }
-/* EMAIL — compensación visual */
+/* EMAIL â€” compensaciÃ³n visual */
 .header-icon-button img[src*="icon-email"] {
     width: 35px !important;
     height: 35px !important;
@@ -4048,7 +4048,7 @@ button {
 }
 
 /* =========================================================
-   NAV TEXT SIZE — FINAL OVERRIDE
+   NAV TEXT SIZE â€” FINAL OVERRIDE
    This is intentionally last so it wins over older rules.
 ========================================================= */
 @media (min-width: 821px) {
@@ -4059,7 +4059,7 @@ button {
 
 
 /* =========================================================
-   BRAYMONT NAVBAR — FINAL VISUAL OVERRIDE
+   BRAYMONT NAVBAR â€” FINAL VISUAL OVERRIDE
    Keeps current layout/positions; only refines typography,
    dividers, and blue hover treatment.
 ========================================================= */
@@ -4074,7 +4074,7 @@ button {
         font-size: 22px !important;
         font-weight: 400 !important;
 
-        /* Letras juntas y visualmente más delgadas */
+        /* Letras juntas y visualmente mÃ¡s delgadas */
         letter-spacing: 0.03em !important;
         -webkit-text-stroke: 0.15px white;
 
@@ -4087,7 +4087,7 @@ button {
         transition: color 0.18s ease !important;
     }
 
-    /* Separadores verticales más cortos */
+    /* Separadores verticales mÃ¡s cortos */
     .main-nav .nav-link:not(:last-child)::after {
         content: "" !important;
 
@@ -4160,7 +4160,7 @@ button {
 
 
 /* =========================================================
-   HERO — SAFE BRAYMONT ADDITIONS
+   HERO â€” SAFE BRAYMONT ADDITIONS
    These rules style only the NEW hero elements and do not
    overwrite the site's existing hero layout.
 ========================================================= */
@@ -4212,7 +4212,7 @@ button {
     }
 }
 /* =========================================================
-   BRAYMONT — GLOBAL TYPOGRAPHY
+   BRAYMONT â€” GLOBAL TYPOGRAPHY
 ========================================================= */
 
 /* BODY / PARAGRAPHS / FORMS */
@@ -4293,7 +4293,7 @@ h6 {
 }
 
 
-/* NAVBAR — KEEP BEBAS NEUE */
+/* NAVBAR â€” KEEP BEBAS NEUE */
 .main-nav .nav-link {
     font-family: "Bebas Neue", sans-serif !important;
 }
@@ -4319,7 +4319,7 @@ h6 {
 }
 
 /* =========================================================
-   BRAYMONT MOBILE SPLASH — FINAL
+   BRAYMONT MOBILE SPLASH â€” FINAL
    Header logo colors
    White -> Blue swipe -> Logo fade -> Hold
    -> Logo fade out -> Blue swipe out
@@ -4726,7 +4726,7 @@ and
     display: flex;
     align-items: center;
     background:
-        url("../../images/pic02.jpg")
+        url("../../images/pic02.webp")
         center center / cover no-repeat;
     overflow: hidden;
 }
@@ -5022,7 +5022,7 @@ and
 /* Protective Coatings service hero */
 .service-detail-hero-coatings {
     background:
-        url("../../images/pic03.jpg")
+        url("../../images/pic03.webp")
         center center / cover no-repeat;
 }
 
@@ -5031,15 +5031,15 @@ and
 ========================================================= */
 
 .service-detail-hero-surface-restoration {
-    background: url("../../images/pic05.jpg") center center / cover no-repeat;
+    background: url("../../images/pic05.webp") center center / cover no-repeat;
 }
 
 .service-detail-hero-commercial-drywall {
-    background: url("../../images/pic04.jpg") center center / cover no-repeat;
+    background: url("../../images/pic04.webp") center center / cover no-repeat;
 }
 
 .service-detail-hero-pressure-washing {
-    background: url("../../images/pic08.jpg") center center / cover no-repeat;
+    background: url("../../images/pic08.webp") center center / cover no-repeat;
 }
 
 .standard-detail-hero {
@@ -5178,7 +5178,7 @@ and
 }
 
 /* =========================================================
-   BRAYMONT INDUSTRIAL — FINAL 9-ITEM DESKTOP NAV
+   BRAYMONT INDUSTRIAL â€” FINAL 9-ITEM DESKTOP NAV
    Definitive override. Keep this at the very end of the file.
 ========================================================= */
 
@@ -5323,7 +5323,7 @@ and
     object-fit: contain;
 }
 /* =========================================================
-   WHY BRAYMONT — IMAGE ICONS
+   WHY BRAYMONT â€” IMAGE ICONS
 ========================================================= */
 
 .value-mark.value-mark-image {
@@ -5352,7 +5352,7 @@ and
     object-fit: contain;
 }
 /* =========================================================
-   OUR PROCESS — IMAGE ICONS
+   OUR PROCESS â€” IMAGE ICONS
 ========================================================= */
 
 .process-icon {

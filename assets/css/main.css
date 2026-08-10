@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+﻿@import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 /*
@@ -3234,7 +3234,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.webp");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -4688,7 +4688,7 @@ input, select, textarea {
 
 	}
 	/* ==================================================
-   TRICORE INDUSTRIAL — DARK THEME
+   TRICORE INDUSTRIAL â€” DARK THEME
 ================================================== */
 
 :root {
@@ -4728,7 +4728,7 @@ body {
 			rgba(0, 0, 0, 0.58),
 			rgba(0, 0, 0, 0.88)
 		),
-		url("../../images/bg.jpg") center center / cover no-repeat;
+		url("../../images/bg.webp") center center / cover no-repeat;
 	color: var(--tricore-white);
 }
 
@@ -5035,7 +5035,7 @@ input[type="submit"]:hover {
 
 }
 /* ==================================================
-   TRICORE — FINAL COLOR OVERRIDES
+   TRICORE â€” FINAL COLOR OVERRIDES
    KEEP THIS AT THE VERY END OF MAIN.CSS
 ================================================== */
 
@@ -5063,7 +5063,7 @@ body,
 	color: #f5f7fa !important;
 }
 
-/* Hero primary button — overrides Massively white button */
+/* Hero primary button â€” overrides Massively white button */
 
 #intro input[type="submit"].primary,
 #intro input[type="reset"].primary,
@@ -5176,7 +5176,7 @@ body,
 	color: #ffffff !important;
 }
 
-/* Footer — overrides original light gray footer */
+/* Footer â€” overrides original light gray footer */
 
 #footer {
 	background-color: #0d0d0d !important;
@@ -5265,7 +5265,7 @@ body,
 
     background:
         linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)),
-        url("../../images/hero-industrial.jpg");
+        url("../../images/hero-industrial.webp");
 
     background-size:cover;
     background-position:center;

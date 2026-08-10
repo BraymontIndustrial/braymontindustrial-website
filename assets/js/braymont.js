@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
 
     /* ==================================================
-       MOBILE SPLASH — HOMEPAGE ONLY
+       MOBILE SPLASH â€” HOMEPAGE ONLY
     ================================================== */
 
     const splash = document.getElementById("braymont-splash");
@@ -133,3 +133,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
