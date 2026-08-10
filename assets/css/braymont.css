@@ -5322,3 +5322,57 @@ and
 
     object-fit: contain;
 }
+/* =========================================================
+   WHY BRAYMONT — IMAGE ICONS
+========================================================= */
+
+.value-mark.value-mark-image {
+    width: 100% !important;
+    height: 140px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 0 18px 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.value-icon-image {
+    display: block;
+
+    width: 170px;
+    height: 125px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+}
+/* =========================================================
+   OUR PROCESS — IMAGE ICONS
+========================================================= */
+
+.process-icon {
+    width: 100%;
+    height: 165px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.process-icon-image {
+    display: block;
+
+    width: 190px;
+    height: 155px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+}
