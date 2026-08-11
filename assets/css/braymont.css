@@ -26,7 +26,6 @@
     --nav-height: 66px;
 }
 
-
 /* =========================================================
    RESET
 \========================================================= */
@@ -114,7 +113,6 @@ button {
         0 auto;
 }
 
-
 /* =========================================================
    DESKTOP
    NO SPLASH
@@ -124,7 +122,6 @@ button {
     display:
         none;
 }
-
 
 /* =========================================================
    TOP HEADER
@@ -178,7 +175,6 @@ button {
     overflow:
         visible;
 }
-
 
 /* =========================================================
    DESKTOP HEADER LOGO
@@ -260,7 +256,6 @@ button {
     }
 
 }
-
 
 /* =========================================================
    HEADER CONTACT / ACTIONS
@@ -375,7 +370,6 @@ button {
         translateY(-1px);
 }
 
-
 /* =========================================================
    MOBILE MENU BUTTON
 \========================================================= */
@@ -420,7 +414,6 @@ button {
         transform 0.25s ease,
         opacity 0.25s ease;
 }
-
 
 /* =========================================================
    MAIN NAVIGATION
@@ -482,50 +475,6 @@ button {
 }
 
 .nav-link {
-    position:
-        relative;
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-   min-width:
-    auto;
-
-    padding:
-    0 10px;
-
-    color:
-        var(--charcoal);
-
-    font-family:
-        "Montserrat",
-        sans-serif;
-
-    font-size:
-        0.92rem;
-
-    font-weight:
-        600;
-
-    letter-spacing:
-        0.02em;
-
-    text-transform:
-        uppercase;
-
-    white-space:
-        nowrap;
-
-    transition:
-        color 0.2s ease,
-        background-color 0.2s ease;
-}.nav-link {
     position:
         relative;
 
@@ -602,7 +551,6 @@ button {
     background:
         #fafafa;
 }
-
 
 /* =========================================================
    HERO
@@ -876,7 +824,6 @@ button {
         34px;
 }
 
-
 /* =========================================================
    BUTTONS
 \========================================================= */
@@ -966,7 +913,6 @@ button {
     color:
         var(--charcoal);
 }
-
 
 /* =========================================================
    GENERIC SECTION HEADING
@@ -1063,7 +1009,6 @@ button {
     color:
         var(--muted);
 }
-
 
 /* =========================================================
    MARKETS
@@ -1229,7 +1174,6 @@ button {
     font-size:
         0.88rem;
 }
-
 
 /* =========================================================
    SERVICES
@@ -1473,7 +1417,6 @@ button {
         var(--blue);
 }
 
-
 /* =========================================================
    ABOUT
 \========================================================= */
@@ -1554,7 +1497,6 @@ button {
     margin-top:
         28px;
 }
-
 
 /* =========================================================
    VALUES
@@ -1666,7 +1608,6 @@ button {
         0.9rem;
 }
 
-
 /* =========================================================
    PROCESS
 \========================================================= */
@@ -1772,7 +1713,6 @@ button {
     font-size:
         0.9rem;
 }
-
 
 /* =========================================================
    CONTACT
@@ -2015,7 +1955,6 @@ button {
         0;
 }
 
-
 /* =========================================================
    FOOTER
 \========================================================= */
@@ -2145,7 +2084,6 @@ button {
         0.78rem;
 }
 
-
 /* =========================================================
    TABLET
 \========================================================= */
@@ -2208,7 +2146,6 @@ button {
 
 }
 
-
 /* =========================================================
    MOBILE
    SPLASH ENABLED
@@ -2223,7 +2160,6 @@ button {
         --nav-height:
             0px;
     }
-
 
     /* -------------------------------
        MOBILE SPLASH
@@ -2357,7 +2293,6 @@ button {
             forwards;
     }
 
-
     /* -------------------------------
        MOBILE SPLASH ANIMATIONS
     -------------------------------- */
@@ -2411,7 +2346,6 @@ button {
         }
 
     }
-
 
     /* -------------------------------
        MOBILE HEADER
@@ -2509,7 +2443,6 @@ button {
         flex-shrink:
             0;
     }
-
 
     /* -------------------------------
        MOBILE NAV
@@ -2620,7 +2553,6 @@ button {
             rotate(-45deg);
     }
 
-
     /* -------------------------------
        MOBILE HERO
     -------------------------------- */
@@ -2661,7 +2593,6 @@ button {
             );
     }
 
-
     /* -------------------------------
        MOBILE SERVICES
     -------------------------------- */
@@ -2695,7 +2626,6 @@ button {
             var(--blue);
     }
 
-
     /* -------------------------------
        MOBILE ABOUT
     -------------------------------- */
@@ -2712,7 +2642,6 @@ button {
         min-height:
             400px;
     }
-
 
     /* -------------------------------
        MOBILE FORM
@@ -2731,7 +2660,6 @@ button {
 
 }
 
-
 /* =========================================================
    SMALL PHONES
 \========================================================= */
@@ -2742,7 +2670,6 @@ button {
         width:
             calc(100% - 28px);
     }
-
 
     /* Header logo */
 
@@ -2758,7 +2685,6 @@ button {
         height:
             68px;
     }
-
 
     /* Hero */
 
@@ -2797,7 +2723,6 @@ button {
             1.7;
     }
 
-
     /* Markets */
 
     .market-grid {
@@ -2821,7 +2746,6 @@ button {
             none !important;
     }
 
-
     /* Section spacing */
 
     .services-section,
@@ -2832,7 +2756,6 @@ button {
         padding:
             64px 0;
     }
-
 
     /* Services */
 
@@ -2851,7 +2774,6 @@ button {
             26px 22px;
     }
 
-
     /* Cards */
 
     .values-grid,
@@ -2861,7 +2783,6 @@ button {
             1fr;
     }
 
-
     /* About */
 
     .about-image-wrap {
@@ -2869,14 +2790,12 @@ button {
             300px;
     }
 
-
     /* Quote form */
 
     .quote-form {
         padding:
             26px 20px;
     }
-
 
     /* Footer */
 
@@ -2898,7 +2817,6 @@ button {
     }
 
 }
-
 
 /* =========================================================
    VERY SMALL PHONES
@@ -2928,7 +2846,6 @@ button {
     }
 
 }
-
 
 /* =========================================================
    REDUCED MOTION
@@ -3032,7 +2949,7 @@ button {
         position: relative;
         z-index: 1;
 
-        /* TamaÃ±o de letra */
+        /* Tamaño de letra */
         font-family: "Montserrat", Arial, sans-serif;
         font-size: 18px !important;
         font-weight: 600;
@@ -3045,7 +2962,6 @@ button {
         transition:
             color 0.22s ease !important;
     }
-
 
     /* =====================================================
        BLUE HOVER BAR
@@ -3063,7 +2979,7 @@ button {
         /* Centrado con las letras */
         top: 50%;
 
-        /* Apenas mÃ¡s alto que las letras */
+        /* Apenas más alto que las letras */
         height: calc(1em + 4px);
 
         transform: translateY(-50%);
@@ -3078,7 +2994,6 @@ button {
             opacity 0.22s ease;
     }
 
-
     /* =====================================================
        HOVER
     ===================================================== */
@@ -3091,7 +3006,6 @@ button {
     .nav-link:hover::before {
         opacity: 1 !important;
     }
-
 
     /* =====================================================
        ACTIVE
@@ -3109,7 +3023,6 @@ button {
     .nav-link.active::before {
         opacity: 0 !important;
     }
-
 
     /* ACTIVE + HOVER */
 
@@ -3133,7 +3046,7 @@ button {
 
 }
 /* =========================================================
-   DESKTOP NAV â€” WIDER LINK SPACING
+   DESKTOP NAV — WIDER LINK SPACING
    ONLY CHANGES WIDTH
 \========================================================= */
 
@@ -3147,7 +3060,7 @@ button {
 
 }
 /* =========================================================
-   NAVBAR ONLY â€” BEBAS NEUE CLEAN
+   NAVBAR ONLY — BEBAS NEUE CLEAN
 \========================================================= */
 
 @media (min-width: 821px) {
@@ -3169,7 +3082,7 @@ button {
 
 }
 /* =========================================================
-   BRAYMONT â€” DESKTOP HEADER ACTIONS FINAL
+   BRAYMONT — DESKTOP HEADER ACTIONS FINAL
    Quote / Location / Email
 \========================================================= */
 
@@ -3189,7 +3102,6 @@ button {
         gap: 20px !important;
     }
 
-
     /* -----------------------------------------------------
        LOGO POSITION
     ----------------------------------------------------- */
@@ -3207,7 +3119,6 @@ button {
         transform: translateX(35px);
     }
 
-
     /* -----------------------------------------------------
        HEADER ACTIONS
     ----------------------------------------------------- */
@@ -3224,7 +3135,6 @@ button {
 
         margin-left: auto !important;
     }
-
 
     /* -----------------------------------------------------
        EACH BUTTON
@@ -3254,7 +3164,6 @@ button {
             color 0.25s ease;
     }
 
-
     /* Email needs more room */
 
     .header-action-button:last-child {
@@ -3262,7 +3171,6 @@ button {
 
         border-right: 1px solid #d3d3d3;
     }
-
 
     /* -----------------------------------------------------
        ICON
@@ -3285,7 +3193,6 @@ button {
             filter 0.25s ease;
     }
 
-
     /* -----------------------------------------------------
        TEXT CONTAINER
     ----------------------------------------------------- */
@@ -3300,7 +3207,6 @@ button {
 
         line-height: 1.2;
     }
-
 
     /* -----------------------------------------------------
        TITLE
@@ -3330,7 +3236,6 @@ button {
             color 0.25s ease;
     }
 
-
     /* -----------------------------------------------------
        SUBTITLE
     ----------------------------------------------------- */
@@ -3359,7 +3264,6 @@ button {
             color 0.25s ease;
     }
 
-
     /* -----------------------------------------------------
        HOVER
     ----------------------------------------------------- */
@@ -3367,7 +3271,6 @@ button {
     .header-action-button:hover {
         background: var(--blue);
     }
-
 
     .header-action-button:hover
     .header-action-title,
@@ -3377,7 +3280,6 @@ button {
         color: #ffffff;
     }
 
-
     .header-action-button:hover
     .header-action-icon {
         transform: scale(1.08);
@@ -3385,9 +3287,8 @@ button {
 
 }
 
-
 /* =========================================================
-   TABLET â€” KEEP HEADER FROM OVERFLOWING
+   TABLET — KEEP HEADER FROM OVERFLOWING
 \========================================================= */
 
 @media (min-width: 821px) and (max-width: 1250px) {
@@ -3431,7 +3332,6 @@ button {
 
 }
 
-
 /* =========================================================
    MOBILE
    Keep action buttons hidden
@@ -3470,7 +3370,6 @@ button {
         z-index: 1000;
     }
 
-
     .top-header-inner {
         width: min(1500px, calc(100% - 60px)) !important;
         height: 172px !important;
@@ -3485,7 +3384,6 @@ button {
 
         overflow: visible !important;
     }
-
 
     /* =====================================================
        LOGO
@@ -3510,7 +3408,6 @@ button {
         transform: translateX(45px);
     }
 
-
     .brand-logo {
         width: 570px !important;
         height: 132px !important;
@@ -3533,7 +3430,6 @@ button {
             forwards
             !important;
     }
-
 
     @keyframes braymontHeaderLogoIn {
 
@@ -3565,7 +3461,6 @@ button {
 
     }
 
-
     /* =====================================================
        RIGHT CONTACT AREA
     ===================================================== */
@@ -3582,7 +3477,6 @@ button {
 
         margin-left: auto !important;
     }
-
 
     /* Small contact blocks */
 
@@ -3610,21 +3504,17 @@ button {
             background-color 0.2s ease;
     }
 
-
     .header-mini-action:nth-child(1) {
         min-width: 155px;
     }
-
 
     .header-mini-action:nth-child(2) {
         min-width: 235px;
     }
 
-
     .header-mini-action:nth-child(3) {
         min-width: 185px;
     }
-
 
     /* ICON */
 
@@ -3641,7 +3531,6 @@ button {
         color: var(--blue);
     }
 
-
     .header-mini-icon svg {
         width: 23px;
         height: 23px;
@@ -3650,7 +3539,6 @@ button {
 
         fill: currentColor;
     }
-
 
     /* CONTACT TEXT */
 
@@ -3663,7 +3551,6 @@ button {
 
         line-height: 1.15;
     }
-
 
     .header-mini-text strong {
         color: var(--blue);
@@ -3679,7 +3566,6 @@ button {
 
         letter-spacing: 0.08em;
     }
-
 
     .header-mini-text small {
         margin-top: 4px;
@@ -3698,19 +3584,16 @@ button {
         white-space: nowrap;
     }
 
-
     /* CONTACT HOVER */
 
     .header-mini-action:hover {
         background: #f6f6f6;
     }
 
-
     .header-mini-action:hover
     .header-mini-icon {
         color: var(--blue-dark);
     }
-
 
     /* =====================================================
        REQUEST A QUOTE BUTTON
@@ -3749,13 +3632,11 @@ button {
             transform 0.22s ease;
     }
 
-
     .header-quote-button:hover {
         background: var(--blue-dark) !important;
 
         transform: translateY(-1px);
     }
-
 
     /* =====================================================
        NAVIGATION
@@ -3787,7 +3668,6 @@ button {
         z-index: 999;
     }
 
-
     .main-nav-inner {
         width: 100% !important;
 
@@ -3808,7 +3688,6 @@ button {
 
         align-items: stretch !important;
     }
-
 
     /* =====================================================
        EACH NAV ITEM
@@ -3855,7 +3734,6 @@ button {
             background-color 0.2s ease;
     }
 
-
     /* =====================================================
        BLACK VERTICAL DIVIDERS
     ===================================================== */
@@ -3876,7 +3754,6 @@ button {
 
         opacity: 1 !important;
     }
-
 
     /* =====================================================
        NAV HOVER
@@ -3906,18 +3783,15 @@ button {
             opacity 0.2s ease;
     }
 
-
     .main-nav .nav-link:hover {
         color: #ffffff !important;
 
         background: transparent !important;
     }
 
-
     .main-nav .nav-link:hover::before {
         opacity: 1 !important;
     }
-
 
     /* Prevent active link from staying blue */
 
@@ -3931,16 +3805,13 @@ button {
         box-shadow: none !important;
     }
 
-
     .main-nav .nav-link.active::before {
         opacity: 0 !important;
     }
 
-
     .main-nav .nav-link.active:hover {
         color: #ffffff !important;
     }
-
 
     .main-nav
     .nav-link.active:hover::before {
@@ -3956,11 +3827,11 @@ button {
 
 }
 /* =========================================================
-   HEADER ICONS â€” POSITION + SIZE
+   HEADER ICONS — POSITION + SIZE
 \========================================================= */
 
 /* =========================================================
-   HEADER ICONS â€” FINAL CLEAN VERSION
+   HEADER ICONS — FINAL CLEAN VERSION
 \========================================================= */
 
 @media (min-width: 821px) {
@@ -3981,7 +3852,6 @@ button {
         gap: 1px !important;
     }
 
-
     .header-icon-button {
         width: 34px !important;
         height: 42px !important;
@@ -3996,7 +3866,6 @@ button {
         background: transparent !important;
         border: 0 !important;
     }
-
 
     .header-icon-button .header-action-icon {
         display: block !important;
@@ -4022,12 +3891,12 @@ button {
     object-position: center !important;
 }
 
-/* LOCATION â€” compensaciÃ³n visual */
+/* LOCATION — compensación visual */
 .header-icon-button img[src*="icon-quote"] {
     width: 35px !important;
     height: 35px !important;
 }
-/* EMAIL â€” compensaciÃ³n visual */
+/* EMAIL — compensación visual */
 .header-icon-button img[src*="icon-email"] {
     width: 35px !important;
     height: 35px !important;
@@ -4048,7 +3917,7 @@ button {
 }
 
 /* =========================================================
-   NAV TEXT SIZE â€” FINAL OVERRIDE
+   NAV TEXT SIZE — FINAL OVERRIDE
    This is intentionally last so it wins over older rules.
 ========================================================= */
 @media (min-width: 821px) {
@@ -4057,9 +3926,8 @@ button {
     }
 }
 
-
 /* =========================================================
-   BRAYMONT NAVBAR â€” FINAL VISUAL OVERRIDE
+   BRAYMONT NAVBAR — FINAL VISUAL OVERRIDE
    Keeps current layout/positions; only refines typography,
    dividers, and blue hover treatment.
 ========================================================= */
@@ -4074,7 +3942,7 @@ button {
         font-size: 22px !important;
         font-weight: 400 !important;
 
-        /* Letras juntas y visualmente mÃ¡s delgadas */
+        /* Letras juntas y visualmente más delgadas */
         letter-spacing: 0.03em !important;
         -webkit-text-stroke: 0.15px white;
 
@@ -4087,7 +3955,7 @@ button {
         transition: color 0.18s ease !important;
     }
 
-    /* Separadores verticales mÃ¡s cortos */
+    /* Separadores verticales más cortos */
     .main-nav .nav-link:not(:last-child)::after {
         content: "" !important;
 
@@ -4158,9 +4026,8 @@ button {
     }
 }
 
-
 /* =========================================================
-   HERO â€” SAFE BRAYMONT ADDITIONS
+   HERO — SAFE BRAYMONT ADDITIONS
    These rules style only the NEW hero elements and do not
    overwrite the site's existing hero layout.
 ========================================================= */
@@ -4212,7 +4079,7 @@ button {
     }
 }
 /* =========================================================
-   BRAYMONT â€” GLOBAL TYPOGRAPHY
+   BRAYMONT — GLOBAL TYPOGRAPHY
 ========================================================= */
 
 /* BODY / PARAGRAPHS / FORMS */
@@ -4227,7 +4094,6 @@ label {
     font-family: "Inter", Arial, sans-serif !important;
 }
 
-
 /* ALL HEADINGS */
 h1,
 h2,
@@ -4238,7 +4104,6 @@ h6 {
     font-family: "Barlow Condensed", sans-serif !important;
 }
 
-
 /* SECTION TITLES */
 .section-heading h2,
 .about-content h2,
@@ -4247,7 +4112,6 @@ h6 {
     font-weight: 600 !important;
     letter-spacing: 0.01em !important;
 }
-
 
 /* SERVICE TITLES */
 .service-content h3,
@@ -4259,7 +4123,6 @@ h6 {
     letter-spacing: 0.015em !important;
 }
 
-
 /* SMALL BLUE LABELS */
 .eyebrow,
 .service-number,
@@ -4269,14 +4132,12 @@ h6 {
     letter-spacing: 0.10em !important;
 }
 
-
 /* HERO MAIN TITLE */
 .hero h1 {
     font-family: "Barlow Condensed", sans-serif !important;
     font-weight: 600 !important;
     letter-spacing: 0.025em !important;
 }
-
 
 /* HERO SUBTITLE */
 .hero-kicker {
@@ -4285,19 +4146,16 @@ h6 {
     letter-spacing: 0.01em !important;
 }
 
-
 /* HERO SERVICES */
 .hero-services,
 .hero-service-area {
     font-family: "Inter", sans-serif !important;
 }
 
-
-/* NAVBAR â€” KEEP BEBAS NEUE */
+/* NAVBAR — KEEP BEBAS NEUE */
 .main-nav .nav-link {
     font-family: "Bebas Neue", sans-serif !important;
 }
-
 
 /* BUTTONS */
 .btn,
@@ -4306,7 +4164,6 @@ h6 {
     font-family: "Inter", sans-serif !important;
     font-weight: 700 !important;
 }
-
 
 /* FOOTER */
 .site-footer {
@@ -4319,7 +4176,7 @@ h6 {
 }
 
 /* =========================================================
-   BRAYMONT MOBILE SPLASH â€” FINAL
+   BRAYMONT MOBILE SPLASH — FINAL
    Header logo colors
    White -> Blue swipe -> Logo fade -> Hold
    -> Logo fade out -> Blue swipe out
@@ -4332,7 +4189,6 @@ h6 {
     }
 
 }
-
 
 @media (max-width: 820px) {
 
@@ -4360,7 +4216,6 @@ h6 {
 
         isolation: isolate !important;
     }
-
 
     /* BLUE PANEL */
 
@@ -4394,7 +4249,6 @@ h6 {
         -webkit-backface-visibility: hidden;
     }
 
-
     /* CONTENT */
 
     #braymont-splash .splash-content {
@@ -4419,7 +4273,6 @@ h6 {
 
         pointer-events: none !important;
     }
-
 
     /* HEADER LOGO IN SPLASH */
 
@@ -4464,7 +4317,6 @@ h6 {
         -webkit-backface-visibility: hidden;
     }
 
-
     /* LOGO FADE IN */
 
     #braymont-splash.show-logo
@@ -4486,7 +4338,6 @@ h6 {
             opacity 0.42s ease-out
             !important;
     }
-
 
     /* LOGO FADE OUT */
 
@@ -4510,7 +4361,6 @@ h6 {
             !important;
     }
 
-
     /* BLUE SWIPE OUT */
 
     #braymont-splash.splash-exit::before {
@@ -4524,7 +4374,6 @@ h6 {
     }
 
 }
-
 
 /* =========================================================
    BLUE SWIPE IN
@@ -4556,7 +4405,6 @@ h6 {
 
 }
 
-
 /* =========================================================
    BLUE SWIPE OUT
 ========================================================= */
@@ -4587,7 +4435,6 @@ h6 {
 
 }
 
-
 /* =========================================================
    SAFARI / IPHONE
 ========================================================= */
@@ -4611,7 +4458,6 @@ h6 {
                 none !important;
         }
 
-
         #braymont-splash.show-logo
         .splash-logo {
 
@@ -4627,7 +4473,6 @@ h6 {
             -webkit-filter:
                 none !important;
         }
-
 
         #braymont-splash.hide-logo
         .splash-logo {
@@ -4648,7 +4493,6 @@ h6 {
     }
 
 }
-
 
 /* =========================================================
    REDUCED MOTION
@@ -4671,7 +4515,6 @@ and
             none !important;
     }
 
-
     #braymont-splash::before {
 
         animation:
@@ -4682,7 +4525,6 @@ and
             forwards
             !important;
     }
-
 
     #braymont-splash.splash-exit::before {
 
@@ -5155,7 +4997,6 @@ and
     }
 }
 
-
 /* =========================================================
    PROJECTS & SAFETY HERO ALIGNMENT FIX
    Match service-page centered content positioning
@@ -5178,7 +5019,7 @@ and
 }
 
 /* =========================================================
-   BRAYMONT INDUSTRIAL â€” FINAL 9-ITEM DESKTOP NAV
+   BRAYMONT INDUSTRIAL — FINAL 9-ITEM DESKTOP NAV
    Definitive override. Keep this at the very end of the file.
 ========================================================= */
 
@@ -5323,7 +5164,7 @@ and
     object-fit: contain;
 }
 /* =========================================================
-   WHY BRAYMONT â€” IMAGE ICONS
+   WHY BRAYMONT — IMAGE ICONS
 ========================================================= */
 
 .value-mark.value-mark-image {
@@ -5352,7 +5193,7 @@ and
     object-fit: contain;
 }
 /* =========================================================
-   OUR PROCESS â€” IMAGE ICONS
+   OUR PROCESS — IMAGE ICONS
 ========================================================= */
 
 .process-icon {
@@ -5405,7 +5246,6 @@ and
     object-position: center;
 }
 
-
 /* TABLET */
 @media screen and (max-width: 980px) {
 
@@ -5419,7 +5259,6 @@ and
     }
 
 }
-
 
 /* MOBILE */
 @media screen and (max-width: 736px) {
@@ -5481,7 +5320,6 @@ and
     margin-top: 0;
 }
 
-
 /* WHERE WE WORK */
 .environment-card-visual {
     overflow: hidden;
@@ -5500,7 +5338,6 @@ and
     object-position: center bottom;
     display: block;
 }
-
 
 /* OUR PROCESS */
 .process-card-visual {
@@ -5530,13 +5367,11 @@ and
     margin-top: 0;
 }
 
-
 /* Removes old numbered badges only on these new visual cards */
 .service-detail-card-visual > span,
 .process-card-visual > span {
     display: none;
 }
-
 
 /* Hover */
 .service-detail-card-visual,
@@ -5556,7 +5391,6 @@ and
     box-shadow: 0 18px 38px rgba(10, 28, 48, 0.10);
 }
 
-
 /* Tablet */
 @media (max-width: 980px) {
     .service-detail-card-visual .service-card-art,
@@ -5571,7 +5405,6 @@ and
         height: 190px;
     }
 }
-
 
 /* Mobile */
 @media (max-width: 640px) {
