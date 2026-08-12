@@ -1182,9 +1182,8 @@ h1, h2, h3, h4, h5, h6 {
     .service-card,.service-image,.btn,.header-action-icon { transition:none; }
 }
 
-
 /* =========================================================
-   FINAL LOGO / MOBILE OVERRIDES
+   FINAL LOGO OVERRIDES — CASE-SENSITIVE ASSETS
 ========================================================= */
 
 .hero-logo-braymont {
@@ -1206,7 +1205,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 220px;
         max-width: 100%;
         height: auto;
-        margin: 0 0 16px 0;
     }
 }
 
