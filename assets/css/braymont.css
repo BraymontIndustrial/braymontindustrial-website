@@ -1,4 +1,4 @@
-/* =========================================================
+﻿/* =========================================================
    BRAYMONT INDUSTRIAL — CLEAN MASTER STYLESHEET
    Compatible with index.html provided August 11, 2026
 ========================================================= */
@@ -315,12 +315,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
 }
 .hero-logo-braymont {
-    width: min(360px, 68vw);
-    height: auto;
-    margin: 0 auto 26px;
-    object-fit: contain;
-    filter: brightness(0) invert(1) drop-shadow(0 8px 14px rgba(0,0,0,.35));
+    display: none;
 }
+
 .hero h1 {
     margin: 0;
     color: var(--white);
