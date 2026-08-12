@@ -1183,44 +1183,78 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =========================================================
-   FINAL LOGO OVERRIDES — CASE-SENSITIVE ASSETS
+   HOME PAGE CONTENT REFINEMENT — FINAL
 ========================================================= */
 
-.hero-logo-braymont {
-    display: none !important;
+.markets-intro {
+    max-width: 860px;
+    margin: -18px auto 34px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
-.footer-logo {
+.project-capability-list {
+    max-width: 980px;
+    margin: 34px auto 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    text-align: left;
+}
+
+.project-capability-list > div {
+    padding: 22px 24px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--blue);
+}
+
+.project-capability-list strong {
     display: block;
-    width: 230px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 16px 0;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
+    margin-bottom: 7px;
+    color: var(--charcoal);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
-    .footer-logo {
-        width: 220px;
-        max-width: 100%;
-        height: auto;
-    }
+.project-capability-list span {
+    display: block;
+    color: var(--muted);
+    font-size: .92rem;
+    line-height: 1.7;
 }
 
-@media (max-width: 560px) {
-    .footer-logo {
-        width: 210px;
-    }
+.process-grid-five {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-/* =========================================================
-   HOME PAGE — DESKTOP REFINEMENT
-   Final layout override for header, nav and hero.
-========================================================= */
+.process-step {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--blue);
+    font-family: "Inter", sans-serif;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.contact-bid-note {
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: .88rem;
+    line-height: 1.7;
+}
+
+.contact-bid-note a {
+    color: var(--blue);
+    font-weight: 600;
+}
 
 @media (min-width: 901px) {
-
     .top-header {
         height: 150px;
     }
@@ -1244,7 +1278,6 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        overflow: visible;
     }
 
     .brand-logo {
@@ -1269,7 +1302,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .main-nav-inner {
         width: min(1460px, calc(100% - 24px));
-        grid-template-columns: repeat(9, minmax(0, 1fr));
     }
 
     .main-nav .nav-link {
@@ -1279,20 +1311,20 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero {
-        min-height: 640px;
+        min-height: 660px;
     }
 
     .hero-content {
-        width: min(980px, calc(100% - 64px));
-        padding: 56px 20px 62px;
+        width: min(1080px, calc(100% - 64px));
+        padding: 62px 20px 68px;
     }
 
     .hero h1 {
-        max-width: 980px;
+        max-width: 1050px;
         margin: 0 auto;
-        font-size: clamp(4rem, 6vw, 6.1rem);
+        font-size: clamp(4rem, 5.8vw, 6rem);
         line-height: .96;
-        letter-spacing: .02em;
+        letter-spacing: .018em;
     }
 
     .hero-rule {
@@ -1301,37 +1333,20 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-kicker {
-        max-width: 800px;
+        max-width: 860px;
         margin-left: auto;
         margin-right: auto;
-        font-size: clamp(1.2rem, 1.6vw, 1.55rem);
-        line-height: 1.45;
+        font-size: clamp(1.08rem, 1.45vw, 1.4rem);
+        line-height: 1.65;
     }
 
-    .hero-service-area {
-        margin-top: 24px;
-    }
-
-    .hero-service-area h3 {
-        margin-bottom: 8px;
-        font-size: 1.1rem;
-    }
-
-    .hero-service-area p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
+    .hero-services {
+        margin-top: 22px;
         font-size: 1rem;
-    }
-
-    .service-area-separator {
-        padding: 0;
     }
 }
 
-/* Slightly tighter desktop nav on medium-width screens */
-@media (min-width: 901px) and (max-width: 1180px) {
+@media (max-width: 1180px) and (min-width: 901px) {
     .brand-lockup {
         width: 340px;
         min-width: 340px;
@@ -1346,35 +1361,60 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
         padding: 0 3px;
     }
+
+    .process-grid-five {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
-/* =========================================================
-   HOME PAGE — MOBILE REFINEMENT
-========================================================= */
-
 @media (max-width: 900px) {
-
     .hero-content {
         padding-top: 48px;
         padding-bottom: 54px;
     }
 
     .hero h1 {
-        font-size: clamp(2.7rem, 11.5vw, 4.4rem);
+        font-size: clamp(2.65rem, 11vw, 4.35rem);
         line-height: .98;
     }
 
     .hero-kicker {
-        max-width: 340px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .hero-services {
+        max-width: 360px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .hero-service-area {
-        margin-top: 22px;
+    .project-capability-list {
+        grid-template-columns: 1fr;
     }
 
-    .hero-service-area p {
-        gap: 5px;
+    .process-grid-five {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .markets-intro {
+        margin-top: -12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .project-capability-list {
+        gap: 12px;
+    }
+
+    .project-capability-list > div {
+        padding: 20px 18px;
+    }
+
+    .process-grid-five {
+        grid-template-columns: 1fr;
     }
 }
