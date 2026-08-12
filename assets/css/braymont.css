@@ -1213,3 +1213,168 @@ h1, h2, h3, h4, h5, h6 {
         width: 210px;
     }
 }
+
+/* =========================================================
+   HOME PAGE — DESKTOP REFINEMENT
+   Final layout override for header, nav and hero.
+========================================================= */
+
+@media (min-width: 901px) {
+
+    .top-header {
+        height: 150px;
+    }
+
+    .top-header-inner {
+        width: min(1480px, calc(100% - 48px));
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+    }
+
+    .brand-lockup {
+        position: static;
+        left: auto;
+        transform: none;
+        width: 420px;
+        min-width: 420px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: visible;
+    }
+
+    .brand-logo {
+        width: 400px;
+        height: 118px;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: left center;
+        opacity: 1;
+        animation: none;
+        transform: none;
+    }
+
+    .header-actions {
+        margin: 0;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+    }
+
+    .main-nav-inner {
+        width: min(1460px, calc(100% - 24px));
+        grid-template-columns: repeat(9, minmax(0, 1fr));
+    }
+
+    .main-nav .nav-link {
+        font-size: 19px;
+        padding: 0 6px;
+        letter-spacing: .02em;
+    }
+
+    .hero {
+        min-height: 640px;
+    }
+
+    .hero-content {
+        width: min(980px, calc(100% - 64px));
+        padding: 56px 20px 62px;
+    }
+
+    .hero h1 {
+        max-width: 980px;
+        margin: 0 auto;
+        font-size: clamp(4rem, 6vw, 6.1rem);
+        line-height: .96;
+        letter-spacing: .02em;
+    }
+
+    .hero-rule {
+        width: min(560px, 62vw);
+        margin-top: 28px;
+    }
+
+    .hero-kicker {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(1.2rem, 1.6vw, 1.55rem);
+        line-height: 1.45;
+    }
+
+    .hero-service-area {
+        margin-top: 24px;
+    }
+
+    .hero-service-area h3 {
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+
+    .hero-service-area p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 1rem;
+    }
+
+    .service-area-separator {
+        padding: 0;
+    }
+}
+
+/* Slightly tighter desktop nav on medium-width screens */
+@media (min-width: 901px) and (max-width: 1180px) {
+    .brand-lockup {
+        width: 340px;
+        min-width: 340px;
+    }
+
+    .brand-logo {
+        width: 325px;
+        height: 108px;
+    }
+
+    .main-nav .nav-link {
+        font-size: 16px;
+        padding: 0 3px;
+    }
+}
+
+/* =========================================================
+   HOME PAGE — MOBILE REFINEMENT
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        padding-top: 48px;
+        padding-bottom: 54px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.7rem, 11.5vw, 4.4rem);
+        line-height: .98;
+    }
+
+    .hero-kicker {
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-service-area {
+        margin-top: 22px;
+    }
+
+    .hero-service-area p {
+        gap: 5px;
+    }
+}
