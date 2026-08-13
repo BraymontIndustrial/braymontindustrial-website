@@ -1,825 +1,788 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
     <title>Commercial Drywall Contractor | Braymont Industrial</title>
-
-    <meta
-        name="description"
-        content="Braymont Industrial provides commercial drywall installation, finishing, texture, repairs, patching and renovation support for commercial and multifamily projects."
-    />
-
+    <meta name="description" content="Commercial drywall installation, finishing, repairs and renovation support for commercial, multifamily and industrial support spaces." />
     <link rel="canonical" href="https://braymontindustrial.com/services/commercial-drywall/" />
-
-    <meta
-        property="og:title"
-        content="Commercial Drywall Contractor | Braymont Industrial"
-    />
-
-    <meta
-        property="og:description"
-        content="Commercial drywall installation, finishing, texture, repairs, patching and renovation support for commercial and multifamily projects."
-    />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://braymontindustrial.com/services/commercial-drywall/" />
-    <meta property="og:image" content="https://braymontindustrial.com/images/social-preview.jpg" />
-    <meta property="og:site_name" content="Braymont Industrial" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <meta
-        name="twitter:title"
-        content="Commercial Drywall Contractor | Braymont Industrial"
-    />
-
-    <meta
-        name="twitter:description"
-        content="Commercial drywall installation, finishing, repairs, patching and renovation support for commercial and multifamily projects."
-    />
-
-    <meta name="twitter:image" content="https://braymontindustrial.com/images/social-preview.jpg" />
-
     <meta name="robots" content="index,follow,max-image-preview:large" />
-    <meta name="author" content="Braymont Industrial LLC" />
-    <meta name="theme-color" content="#1767B9" />
+    <meta name="theme-color" content="#0b55c4" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="apple-touch-icon" href="/images/favicon.png" />
 
     <link rel="stylesheet" href="/assets/css/braymont.css?v=20260812-global-1" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://braymontindustrial.com/services/commercial-drywall/#webpage",
-          "url": "https://braymontindustrial.com/services/commercial-drywall/",
-          "name": "Commercial Drywall Contractor | Braymont Industrial",
-          "description": "Commercial drywall installation, finishing, texture, repairs, patching and renovation support for commercial and multifamily projects.",
-          "isPartOf": {
-            "@id": "https://braymontindustrial.com/#website"
-          },
-          "about": {
-            "@id": "https://braymontindustrial.com/#organization"
-          }
-        },
-        {
-          "@type": "Service",
-          "@id": "https://braymontindustrial.com/services/commercial-drywall/#service",
-          "name": "Commercial Drywall Installation, Finishing & Repair",
-          "serviceType": "Commercial Drywall",
-          "provider": {
-            "@id": "https://braymontindustrial.com/#organization"
-          },
-          "areaServed": [
-            {
-              "@type": "State",
-              "name": "North Carolina"
-            },
-            {
-              "@type": "State",
-              "name": "South Carolina"
-            }
-          ],
-          "url": "https://braymontindustrial.com/services/commercial-drywall/"
+    <style>
+        :root {
+            --drywall-blue: #0b55c4;
+            --drywall-blue-dark: #073a86;
+            --drywall-ink: #151515;
+            --drywall-soft: #f5f6f8;
+            --drywall-line: #dedfe3;
         }
-      ]
-    }
-    </script>
-</head>
 
+        .drywall-redesign {
+            background: #fff;
+            color: #232323;
+        }
+
+        /* HERO */
+        .drywall-hero {
+            position: relative;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(90deg, rgba(9,19,32,.86), rgba(9,19,32,.55)),
+                url("/images/pic04.webp") center 46% / cover no-repeat;
+            overflow: hidden;
+        }
+
+        .drywall-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 5px;
+            background: var(--drywall-blue);
+        }
+
+        .drywall-hero-inner {
+            position: relative;
+            z-index: 2;
+            width: min(1180px, calc(100% - 48px));
+            margin: 0 auto;
+            padding: 70px 0;
+            color: white;
+        }
+
+        .drywall-breadcrumb {
+            margin: 0 0 18px;
+            font: 600 .77rem/1.4 "Inter", sans-serif;
+            letter-spacing: .09em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,.72);
+        }
+
+        .drywall-breadcrumb a:hover { color: #fff; }
+
+        .drywall-eyebrow {
+            display: block;
+            margin-bottom: 10px;
+            font: 700 .86rem/1 "Inter", sans-serif;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: #76b5ff;
+        }
+
+        .drywall-hero h1 {
+            max-width: 900px;
+            margin: 0;
+            font: 600 clamp(3.5rem, 6.2vw, 6.5rem)/.94 "Barlow Condensed", sans-serif;
+            letter-spacing: .01em;
+            text-transform: uppercase;
+        }
+
+        .drywall-hero p.lead {
+            max-width: 760px;
+            margin: 24px 0 0;
+            font: 400 clamp(1rem, 1.5vw, 1.2rem)/1.7 "Inter", sans-serif;
+            color: rgba(255,255,255,.9);
+        }
+
+        .drywall-hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /* INTRO */
+        .drywall-intro {
+            padding: 76px 0 52px;
+        }
+
+        .drywall-intro-inner {
+            width: min(980px, calc(100% - 40px));
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .drywall-intro h2 {
+            margin: 0;
+            font: 600 clamp(2.5rem, 4.4vw, 4.25rem)/1 "Barlow Condensed", sans-serif;
+            text-transform: uppercase;
+            color: var(--drywall-ink);
+        }
+
+        .drywall-intro p {
+            max-width: 800px;
+            margin: 18px auto 0;
+            color: #5b5d61;
+            font: 400 1rem/1.85 "Inter", sans-serif;
+        }
+
+        /* 3 FEATURE CARDS */
+        .drywall-feature-section {
+            padding: 10px 0 86px;
+        }
+
+        .drywall-feature-grid {
+            width: min(1420px, calc(100% - 48px));
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .drywall-feature-card {
+            background: #fff;
+            border: 1px solid var(--drywall-line);
+            box-shadow: 0 10px 30px rgba(0,0,0,.055);
+            overflow: hidden;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .drywall-feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 42px rgba(0,0,0,.10);
+        }
+
+        .drywall-feature-photo {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+            background: #ddd;
+        }
+
+        .drywall-feature-photo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .drywall-feature-body {
+            padding: 28px 28px 32px;
+            border-top: 4px solid var(--drywall-blue);
+        }
+
+        .drywall-feature-body h3 {
+            position: relative;
+            margin: 0 0 20px;
+            padding-bottom: 13px;
+            color: var(--drywall-ink);
+            font: 600 1.8rem/1 "Barlow Condensed", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .drywall-feature-body h3::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 54px;
+            height: 3px;
+            background: var(--drywall-blue);
+        }
+
+        .drywall-feature-body p {
+            margin: 0;
+            color: #5a5d62;
+            font: 400 .96rem/1.75 "Inter", sans-serif;
+        }
+
+        .drywall-feature-list {
+            margin: 22px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .drywall-feature-list li {
+            position: relative;
+            padding-left: 26px;
+            margin: 10px 0;
+            color: #292b2f;
+            font: 500 .91rem/1.5 "Inter", sans-serif;
+        }
+
+        .drywall-feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--drywall-blue);
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        /* SECONDARY CAPABILITIES */
+        .drywall-capabilities {
+            padding: 82px 0;
+            background: var(--drywall-soft);
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .drywall-capabilities-inner {
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        .drywall-section-heading {
+            max-width: 790px;
+            margin-bottom: 38px;
+        }
+
+        .drywall-section-heading h2 {
+            margin: 0;
+            color: var(--drywall-ink);
+            font: 600 clamp(2.5rem, 4vw, 3.8rem)/1.02 "Barlow Condensed", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .drywall-section-heading p {
+            margin: 15px 0 0;
+            color: #626469;
+            font: 400 1rem/1.8 "Inter", sans-serif;
+        }
+
+        .drywall-mini-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0,1fr));
+            gap: 18px;
+        }
+
+        .drywall-mini-card {
+            padding: 27px 25px;
+            background: #fff;
+            border: 1px solid var(--drywall-line);
+            border-top: 4px solid var(--drywall-blue);
+        }
+
+        .drywall-mini-card h3 {
+            margin: 0;
+            font: 600 1.5rem/1.05 "Barlow Condensed", sans-serif;
+            text-transform: uppercase;
+            color: var(--drywall-ink);
+        }
+
+        .drywall-mini-card p {
+            margin: 11px 0 0;
+            color: #626469;
+            font: 400 .92rem/1.7 "Inter", sans-serif;
+        }
+
+        /* PROCESS */
+        .drywall-process {
+            padding: 82px 0 90px;
+        }
+
+        .drywall-process-inner {
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        .drywall-process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0,1fr));
+            gap: 16px;
+            margin-top: 34px;
+        }
+
+        .drywall-process-card {
+            padding: 28px 24px;
+            background: #fff;
+            border: 1px solid var(--drywall-line);
+        }
+
+        .drywall-process-number {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: var(--drywall-blue);
+            font: 700 .78rem/1 "Inter", sans-serif;
+            letter-spacing: .12em;
+        }
+
+        .drywall-process-card h3 {
+            margin: 0;
+            font: 600 1.45rem/1.05 "Barlow Condensed", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .drywall-process-card p {
+            margin: 10px 0 0;
+            color: #626469;
+            font: 400 .9rem/1.7 "Inter", sans-serif;
+        }
+
+        /* CTA */
+        .drywall-cta {
+            padding: 70px 0;
+            background:
+                linear-gradient(120deg, rgba(6,25,48,.98), rgba(11,85,196,.94)),
+                #073a86;
+            border-bottom: 5px solid var(--drywall-blue);
+        }
+
+        .drywall-cta-inner {
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .drywall-cta h2 {
+            margin: 0;
+            color: #fff;
+            font: 600 clamp(2.5rem, 4vw, 4rem)/1 "Barlow Condensed", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .drywall-cta p {
+            max-width: 720px;
+            margin: 14px 0 0;
+            color: rgba(255,255,255,.82);
+            font: 400 .98rem/1.75 "Inter", sans-serif;
+        }
+
+        .drywall-cta .btn {
+            flex-shrink: 0;
+            background: #fff;
+            color: var(--drywall-blue-dark);
+        }
+
+        .drywall-cta .btn:hover {
+            background: #f2f6ff;
+        }
+
+        @media (max-width: 1050px) {
+            .drywall-feature-grid,
+            .drywall-mini-grid {
+                grid-template-columns: repeat(2, minmax(0,1fr));
+            }
+
+            .drywall-feature-card:last-child {
+                grid-column: 1 / -1;
+                max-width: 690px;
+                width: 100%;
+                justify-self: center;
+            }
+
+            .drywall-process-grid {
+                grid-template-columns: repeat(2, minmax(0,1fr));
+            }
+        }
+
+        @media (max-width: 900px) {
+            .drywall-hero {
+                min-height: 500px;
+            }
+
+            .drywall-hero-inner {
+                width: calc(100% - 32px);
+                padding: 70px 0 76px;
+            }
+
+            .drywall-hero h1 {
+                font-size: clamp(3.2rem, 13vw, 5.2rem);
+            }
+
+            .drywall-cta-inner {
+                display: block;
+            }
+
+            .drywall-cta .btn {
+                margin-top: 26px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .drywall-feature-grid,
+            .drywall-mini-grid,
+            .drywall-process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .drywall-feature-card:last-child {
+                grid-column: auto;
+            }
+
+            .drywall-feature-grid {
+                width: calc(100% - 28px);
+            }
+
+            .drywall-intro {
+                padding: 62px 0 42px;
+            }
+
+            .drywall-feature-section {
+                padding-bottom: 64px;
+            }
+
+            .drywall-capabilities,
+            .drywall-process {
+                padding: 64px 0;
+            }
+        }
+    </style>
+</head>
 
 <body class="service-page">
 
-    <!-- HEADER -->
-    
-<header class="top-header" id="home">
-  <div class="top-header-inner">
-    <a href="/" class="brand-lockup" aria-label="Braymont Industrial Home">
-      <img src="/images/braymont-logo.PNG?v=20260812-global-1" alt="Braymont Industrial" class="brand-logo" />
-    </a>
-
-    <div class="header-actions">
-      <button class="mobile-menu-toggle" id="mobile-menu-toggle" type="button"
-              aria-label="Open navigation menu" aria-controls="main-nav" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <a href="/contact/" class="header-icon-button" aria-label="Request a Quote" title="Request a Quote">
-        <img src="/images/icon-phone.png" alt="" class="header-action-icon" />
-      </a>
-
-      <a href="https://www.google.com/maps/search/?api=1&query=Downtown+Gastonia%2C+NC"
-         target="_blank" rel="noopener noreferrer" class="header-icon-button"
-         aria-label="Downtown Gastonia, North Carolina" title="Downtown Gastonia, NC">
-        <img src="/images/icon-quote.png" alt="" class="header-action-icon" />
-      </a>
-
-      <a href="mailto:office@braymontindustrial.com" class="header-icon-button"
-         aria-label="Email Braymont Industrial" title="Email Braymont Industrial">
-        <img src="/images/icon-email.png" alt="" class="header-action-icon" />
-      </a>
-    </div>
-  </div>
-</header>
-
-<nav class="main-nav" id="main-nav" aria-label="Main navigation">
-  <div class="main-nav-inner">
-    <a href="/#about" class="nav-link">ABOUT</a>
-    <a href="/services/industrial-painting/" class="nav-link">PAINTING</a>
-    <a href="/services/protective-coatings/" class="nav-link">COATINGS</a>
-    <a href="/services/surface-restoration/" class="nav-link">RESTORATION</a>
-    <a href="/services/commercial-drywall/" class="nav-link active">DRYWALL</a>
-    <a href="/services/pressure-washing/" class="nav-link">PRESSURE WASHING</a>
-    <a href="/projects/" class="nav-link">PROJECTS</a>
-    <a href="/safety/" class="nav-link">SAFETY</a>
-    <a href="/contact/" class="nav-link">CONTACT</a>
-  </div>
-</nav>
-
-
-    <main>
-
-        <!-- SERVICE HERO -->
-        <section class="service-detail-hero service-detail-hero-commercial-drywall">
-
-            <div class="service-detail-hero-overlay"></div>
-
-            <div class="section-shell service-detail-hero-content">
-
-                <p class="service-breadcrumb">
-                    <a href="/">Home</a>
-                    <span aria-hidden="true">/</span>
-                    <span>Commercial Drywall</span>
-                </p>
-
-                <span class="eyebrow light">
-                    Commercial Drywall
-                </span>
-
-                <h1>
-                    Commercial Drywall Installation, Finishing &amp; Repair
-                </h1>
-
-                <p class="service-detail-lead">
-                    Drywall installation, finishing, texture, repairs and renovation
-                    support for commercial, multifamily and industrial support spaces.
-                </p>
-
-                <div class="hero-actions">
-
-                    <a href="/contact/" class="btn btn-primary">
-                        Request a Quote
-                    </a>
-
-                    <a href="#service-capabilities" class="btn btn-outline-light">
-                        View Capabilities
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- INTRO -->
-        <section class="service-detail-section" id="service-capabilities">
-
-            <div class="section-shell service-detail-grid">
-
-                <div>
-
-                    <span class="eyebrow">
-                        Commercial Drywall
-                    </span>
-
-                    <h2 class="service-detail-heading">
-                        Drywall scopes coordinated for commercial and multifamily projects.
-                    </h2>
-
-                    <p>
-                        Braymont Industrial supports drywall scopes for commercial
-                        properties, multifamily projects, renovations and industrial
-                        support spaces.
-                    </p>
-
-                    <p>
-                        Services can include installation, finishing, texture,
-                        patching and repair work coordinated with painting and
-                        project turnover requirements.
-                    </p>
-
-                </div>
-
-
-                <div class="service-detail-image-wrap">
-
-                    <img
-                        src="/images/pic04.webp"
-                        alt="Commercial drywall installation and finishing"
-                        class="service-detail-image"
-                        loading="lazy"
-                        decoding="async"
-                    />
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CAPABILITIES -->
-<section class="service-detail-section service-detail-section-gray">
-
-    <div class="section-shell">
-
-        <div class="section-heading centered">
-
-            <span class="eyebrow">
-                Capabilities
-            </span>
-
-            <h2>
-                Commercial Drywall Installation, Finishing &amp; Repair
-            </h2>
-
-            <p>
-                Scope is coordinated around project conditions, access,
-                schedule and the needs of the facility.
-            </p>
-
-        </div>
-
-
-        <div class="drywall-capability-grid">
-
-
-            <!-- DRYWALL INSTALLATION -->
-            <article class="drywall-capability-card">
-
-                <div class="drywall-card-art">
-                    <img
-                        src="/images/drywall-installation.webp?v=2"
-                        alt="Commercial drywall installation"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-
-                <div class="drywall-card-content">
-
-                    <h3>
-                        Drywall Installation
-                    </h3>
-
-                    <p>
-                        Installation support for commercial, multifamily
-                        and industrial support spaces.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- DRYWALL FINISHING -->
-            <article class="drywall-capability-card">
-
-                <div class="drywall-card-art">
-                    <img
-                        src="/images/drywall-finishing.webp?v=2"
-                        alt="Commercial drywall finishing"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-
-                <div class="drywall-card-content">
-
-                    <h3>
-                        Drywall Finishing
-                    </h3>
-
-                    <p>
-                        Finishing of installed drywall in preparation
-                        for paint or the specified final finish.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- TEXTURE -->
-            <article class="drywall-capability-card">
-
-                <div class="drywall-card-art">
-                    <img
-                        src="/images/drywall-texture.webp?v=2"
-                        alt="Commercial drywall texture application"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-
-                <div class="drywall-card-content">
-
-                    <h3>
-                        Texture
-                    </h3>
-
-                    <p>
-                        Texture application where required by the project scope.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- REPAIRS & PATCHING -->
-            <article class="drywall-capability-card">
-
-                <div class="drywall-card-art">
-                    <img
-                        src="/images/drywall-repairs-patching.webp?v=2"
-                        alt="Commercial drywall repairs and patching"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-
-                <div class="drywall-card-content">
-
-                    <h3>
-                        Repairs &amp; Patching
-                    </h3>
-
-                    <p>
-                        Repair and patching of damaged or modified drywall surfaces.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- RENOVATION SUPPORT -->
-            <article class="drywall-capability-card">
-
-                <div class="drywall-card-art">
-                    <img
-                        src="/images/drywall-renovation-support.webp?v=2"
-                        alt="Commercial drywall renovation support"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-
-                <div class="drywall-card-content">
-
-                    <h3>
-                        Renovation Support
-                    </h3>
-
-                    <p>
-                        Drywall work associated with remodels, tenant
-                        improvements and property upgrades.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- PAINT-READY PREPARATION -->
-            <article class="drywall-capability-card">
-
-                <div class="drywall-card-art">
-                    <img
-                        src="/images/drywall-paint-ready-preparation.webp?v=2"
-                        alt="Paint-ready commercial drywall preparation"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-
-                <div class="drywall-card-content">
-
-                    <h3>
-                        Paint-Ready Preparation
-                    </h3>
-
-                    <p>
-                        Final drywall preparation coordinated with
-                        subsequent painting work.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-        <!-- ENVIRONMENTS -->
-        <section class="service-detail-section">
-
-            <div class="section-shell">
-
-                <div class="section-heading">
-
-                    <span class="eyebrow">
-                        Where We Work
-                    </span>
-
-                    <h2>
-                        Commercial &amp; industrial environments across the Carolinas.
-                    </h2>
-
-                </div>
-
-
-                <div class="service-detail-environments">
-
-                    <div>
-
-                        <h3>
-                            Commercial Interiors
-                        </h3>
-
-                        <p>
-                            Drywall for commercial buildouts and renovations.
-                        </p>
-
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Multifamily
-                        </h3>
-
-                        <p>
-                            Drywall installation and repair support for
-                            multifamily projects.
-                        </p>
-
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Facility Support Spaces
-                        </h3>
-
-                        <p>
-                            Interior drywall scopes within industrial and
-                            facility environments.
-                        </p>
-
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Renovations
-                        </h3>
-
-                        <p>
-                            Patching, repair and new drywall associated
-                            with renovation work.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROCESS -->
-        <section class="process-section">
-
-            <div class="section-shell">
-
-                <div class="section-heading centered">
-
-                    <span class="eyebrow">
-                        Our Process
-                    </span>
-
-                    <h2>
-                        From Project Review to Final Turnover
-                    </h2>
-
-                </div>
-
-
-                <div class="process-grid">
-
-                    <div class="process-card">
-
-                        
-
-                        <h3>
-                            Scope Review
-                        </h3>
-
-                        <p>
-                            We review drawings, existing conditions
-                            and requested drywall scope.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-card">
-
-                        
-
-                        <h3>
-                            Coordination
-                        </h3>
-
-                        <p>
-                            Work is coordinated around access,
-                            sequencing and other trades.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-card">
-
-                     
-
-                        <h3>
-                            Installation &amp; Finish
-                        </h3>
-
-                        <p>
-                            Drywall installation and finishing are completed
-                            according to the agreed scope.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-card">
-
-                      
-
-                        <h3>
-                            Final Review
-                        </h3>
-
-                        <p>
-                            Completed work is reviewed before painting
-                            or project turnover.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SERVICE AREA / CTA -->
-        <section class="service-detail-cta">
-
-            <div class="section-shell service-detail-cta-inner">
-
-                <div>
-
-                    <span class="eyebrow light">
-                        Serving the Carolinas
-                    </span>
-
-                    <h2>
-                        Need a commercial drywall contractor?
-                    </h2>
-
-                    <p>
-                        Tell us about your project type, drywall scope and schedule.
-                        Braymont Industrial supports commercial and multifamily
-                        projects throughout the Carolinas.
-                    </p>
-
-                </div>
-
-
-                <a href="/contact/" class="btn btn-primary">
-                    Request a Quote
+    <!-- GLOBAL HEADER -->
+    <header class="top-header" id="home">
+        <div class="top-header-inner">
+
+            <a href="/" class="brand-lockup" aria-label="Braymont Industrial Home">
+                <img
+                    src="/images/braymont-logo.PNG?v=20260812-global-1"
+                    alt="Braymont Industrial"
+                    class="brand-logo"
+                />
+            </a>
+
+            <div class="header-actions">
+
+                <button
+                    class="mobile-menu-toggle"
+                    id="mobile-menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="main-nav"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="/contact/" class="header-icon-button" aria-label="Request a Quote" title="Request a Quote">
+                    <img src="/images/icon-phone.png" alt="" class="header-action-icon" />
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Downtown+Gastonia%2C+NC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="header-icon-button"
+                    aria-label="Downtown Gastonia, North Carolina"
+                    title="Downtown Gastonia, NC"
+                >
+                    <img src="/images/icon-quote.png" alt="" class="header-action-icon" />
+                </a>
+
+                <a href="mailto:office@braymontindustrial.com" class="header-icon-button" aria-label="Email Braymont Industrial" title="Email Braymont Industrial">
+                    <img src="/images/icon-email.png" alt="" class="header-action-icon" />
                 </a>
 
             </div>
+        </div>
+    </header>
 
+    <!-- GLOBAL NAV -->
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <div class="main-nav-inner">
+            <a href="/#about" class="nav-link">ABOUT</a>
+            <a href="/services/industrial-painting/" class="nav-link">PAINTING</a>
+            <a href="/services/protective-coatings/" class="nav-link">COATINGS</a>
+            <a href="/services/surface-restoration/" class="nav-link">RESTORATION</a>
+            <a href="/services/commercial-drywall/" class="nav-link active">DRYWALL</a>
+            <a href="/services/pressure-washing/" class="nav-link">PRESSURE WASHING</a>
+            <a href="/projects/" class="nav-link">PROJECTS</a>
+            <a href="/safety/" class="nav-link">SAFETY</a>
+            <a href="/contact/" class="nav-link">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="drywall-redesign">
+
+        <!-- HERO -->
+        <section class="drywall-hero">
+            <div class="drywall-hero-inner">
+                <p class="drywall-breadcrumb"><a href="/">Home</a> / Services / Commercial Drywall</p>
+                <span class="drywall-eyebrow">Commercial Drywall</span>
+                <h1>Commercial Drywall Installation, Finishing &amp; Repair</h1>
+                <p class="lead">
+                    Drywall scopes coordinated for commercial interiors, multifamily projects,
+                    renovations and facility support spaces—from installation through paint-ready preparation.
+                </p>
+                <div class="drywall-hero-actions">
+                    <a href="/contact/" class="btn btn-primary">Request a Quote</a>
+                    <a href="#capabilities" class="btn btn-outline-light">View Capabilities</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="drywall-intro">
+            <div class="drywall-intro-inner">
+                <span class="drywall-eyebrow" style="color:var(--drywall-blue)">Drywall Capabilities</span>
+                <h2>Built for Active Commercial Projects</h2>
+                <p>
+                    Braymont Industrial supports defined drywall scopes with attention to access,
+                    sequencing, surrounding conditions and coordination with subsequent painting
+                    and project turnover requirements.
+                </p>
+            </div>
+        </section>
+
+        <!-- THREE MAIN SERVICES -->
+        <section class="drywall-feature-section" id="capabilities">
+            <div class="drywall-feature-grid">
+
+                <article class="drywall-feature-card">
+                    <div class="drywall-feature-photo">
+                        <img src="/images/drywall-installation.webp?v=2" alt="Commercial drywall installation" />
+                    </div>
+                    <div class="drywall-feature-body">
+                        <h3>Drywall Installation</h3>
+                        <p>
+                            Installation support for commercial, multifamily and facility interiors,
+                            coordinated around the project schedule and existing site conditions.
+                        </p>
+                        <ul class="drywall-feature-list">
+                            <li>Board installation</li>
+                            <li>Commercial interiors</li>
+                            <li>Multifamily scopes</li>
+                            <li>Renovation support</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="drywall-feature-card">
+                    <div class="drywall-feature-photo">
+                        <img src="/images/drywall-finishing.webp?v=2" alt="Commercial drywall finishing" />
+                    </div>
+                    <div class="drywall-feature-body">
+                        <h3>Drywall Finishing</h3>
+                        <p>
+                            Joint treatment and finish preparation intended to deliver clean,
+                            consistent surfaces ready for the specified final coating or finish.
+                        </p>
+                        <ul class="drywall-feature-list">
+                            <li>Taping &amp; joint treatment</li>
+                            <li>Compound application</li>
+                            <li>Sanding &amp; surface refinement</li>
+                            <li>Paint-ready preparation</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="drywall-feature-card">
+                    <div class="drywall-feature-photo">
+                        <img src="/images/drywall-repairs-patching.webp?v=2" alt="Commercial drywall repairs and patching" />
+                    </div>
+                    <div class="drywall-feature-body">
+                        <h3>Repairs &amp; Patching</h3>
+                        <p>
+                            Repair and patching for damaged, modified or opened drywall surfaces
+                            associated with renovations, trade access and property improvements.
+                        </p>
+                        <ul class="drywall-feature-list">
+                            <li>Localized repairs</li>
+                            <li>Wall &amp; ceiling patching</li>
+                            <li>Trade-access repairs</li>
+                            <li>Renovation modifications</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECONDARY CAPABILITIES -->
+        <section class="drywall-capabilities">
+            <div class="drywall-capabilities-inner">
+
+                <div class="drywall-section-heading">
+                    <span class="drywall-eyebrow" style="color:var(--drywall-blue)">Additional Support</span>
+                    <h2>Drywall Work Beyond Initial Installation</h2>
+                    <p>
+                        Project requirements can extend beyond hanging board. Braymont can support
+                        finish preparation, renovation-related modifications and coordination with
+                        painting scopes when included in the agreed work.
+                    </p>
+                </div>
+
+                <div class="drywall-mini-grid">
+                    <article class="drywall-mini-card">
+                        <h3>Texture</h3>
+                        <p>Texture application where required by the project scope and specified finish.</p>
+                    </article>
+
+                    <article class="drywall-mini-card">
+                        <h3>Renovation Support</h3>
+                        <p>Drywall work associated with remodels, tenant improvements and property upgrades.</p>
+                    </article>
+
+                    <article class="drywall-mini-card">
+                        <h3>Paint-Ready Preparation</h3>
+                        <p>Final drywall preparation coordinated with subsequent painting and finish work.</p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="drywall-process">
+            <div class="drywall-process-inner">
+
+                <div class="drywall-section-heading">
+                    <span class="drywall-eyebrow" style="color:var(--drywall-blue)">Our Process</span>
+                    <h2>From Scope Review to Final Turnover</h2>
+                    <p>
+                        A clear process helps coordinate drywall work with access, other trades and
+                        the overall project schedule.
+                    </p>
+                </div>
+
+                <div class="drywall-process-grid">
+                    <article class="drywall-process-card">
+                        <span class="drywall-process-number">01</span>
+                        <h3>Scope Review</h3>
+                        <p>We review available drawings, existing conditions and the requested drywall scope.</p>
+                    </article>
+
+                    <article class="drywall-process-card">
+                        <span class="drywall-process-number">02</span>
+                        <h3>Coordination</h3>
+                        <p>Access, sequencing, site conditions and interaction with other trades are considered before work proceeds.</p>
+                    </article>
+
+                    <article class="drywall-process-card">
+                        <span class="drywall-process-number">03</span>
+                        <h3>Installation &amp; Finish</h3>
+                        <p>Drywall installation and finishing are completed according to the agreed project scope.</p>
+                    </article>
+
+                    <article class="drywall-process-card">
+                        <span class="drywall-process-number">04</span>
+                        <h3>Final Review</h3>
+                        <p>Completed work is reviewed before painting, subsequent finishes or project turnover.</p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="drywall-cta">
+            <div class="drywall-cta-inner">
+                <div>
+                    <span class="drywall-eyebrow">Project Coordination</span>
+                    <h2>Need Commercial Drywall Support?</h2>
+                    <p>
+                        Send us the project location, requested drywall scope, bid date,
+                        schedule and available drawings for review.
+                    </p>
+                </div>
+                <a href="/contact/" class="btn">Request a Quote</a>
+            </div>
         </section>
 
     </main>
 
-
-    <!-- FOOTER -->
+    <!-- GLOBAL FOOTER -->
     <footer class="site-footer">
-
         <div class="section-shell footer-grid">
-
             <div class="footer-brand">
-
                 <img
                     src="/images/braymont-logo2.PNG?v=20260812-global-1"
                     alt="Braymont Industrial"
                     class="footer-logo"
                 />
-
-                <p>
-                    Commercial &amp; Industrial Specialty Contracting
-                </p>
-
+                <p>Commercial &amp; Industrial Specialty Contracting</p>
             </div>
-
 
             <div>
-
-                <h3>
-                    Core Services
-                </h3>
-
+                <h3>Core Services</h3>
                 <p>
-
-                    <a href="/services/industrial-painting/">
-                        Painting
-                    </a>
-
-                    <br />
-
-                    <a href="/services/protective-coatings/">
-                        Protective Coatings
-                    </a>
-
-                    <br />
-
-                    <a href="/services/commercial-drywall/">
-                        Commercial Drywall
-                    </a>
-
-                    <br />
-
-                    <a href="/services/surface-restoration/">
-                        Surface Restoration
-                    </a>
-
-                    <br />
-
-                    <a href="/services/pressure-washing/">
-                        Pressure Washing
-                    </a>
-
+                    <a href="/services/industrial-painting/">Painting</a><br />
+                    <a href="/services/protective-coatings/">Protective Coatings</a><br />
+                    <a href="/services/commercial-drywall/">Commercial Drywall</a><br />
+                    <a href="/services/surface-restoration/">Surface Restoration</a><br />
+                    <a href="/services/pressure-washing/">Pressure Washing</a>
                 </p>
-
             </div>
-
 
             <div>
-
-                <h3>
-                    Contact
-                </h3>
-
+                <h3>Contact</h3>
                 <p>
-
-                    <a href="tel:+19805771650">
-                        (980) 577-1650
-                    </a>
-
-                    <br />
-
-                    <a href="mailto:office@braymontindustrial.com">
-                        office@braymontindustrial.com
-                    </a>
-
+                    <a href="tel:+19805771650">(980) 577-1650</a><br />
+                    <a href="mailto:office@braymontindustrial.com">office@braymontindustrial.com</a>
                 </p>
-
             </div>
-
 
             <div>
-
-                <h3>
-                    Service Area
-                </h3>
-
+                <h3>Service Area</h3>
                 <p>
-
-                    <a href="/locations/north-carolina/">
-                        North Carolina
-                    </a>
-
-                    <br />
-
-                    <a href="/locations/south-carolina/">
-                        South Carolina
-                    </a>
-
+                    <a href="/locations/north-carolina/">North Carolina</a><br />
+                    <a href="/locations/south-carolina/">South Carolina</a>
                 </p>
-
             </div>
-
         </div>
-
 
         <div class="footer-bottom">
-
             <div class="section-shell footer-bottom-inner">
-
-                <p>
-                    &copy; 2026 Braymont Industrial LLC. All rights reserved.
-                </p>
-
-                <p>
-                    Serving the Carolinas
-                </p>
-
+                <p>&copy; 2026 Braymont Industrial LLC. All rights reserved.</p>
+                <p>Serving the Carolinas</p>
             </div>
-
         </div>
-
     </footer>
-
 
     <script src="/assets/js/braymont.js?v=20260812-global-1"></script>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("mobile-menu-toggle");
+        const nav = document.getElementById("main-nav");
+        if (!btn || !nav) return;
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("mobile-menu-toggle");
-  const nav = document.getElementById("main-nav");
-  if (!btn || !nav) return;
+        function closeMenu() {
+            nav.classList.remove("mobile-open");
+            btn.classList.remove("is-active");
+            btn.setAttribute("aria-expanded", "false");
+            btn.setAttribute("aria-label", "Open navigation menu");
+            document.body.classList.remove("mobile-menu-open");
+        }
 
-  function closeMenu() {
-    nav.classList.remove("mobile-open");
-    btn.classList.remove("is-active");
-    btn.setAttribute("aria-expanded","false");
-    btn.setAttribute("aria-label","Open navigation menu");
-    document.body.classList.remove("mobile-menu-open");
-  }
+        function openMenu() {
+            nav.classList.add("mobile-open");
+            btn.classList.add("is-active");
+            btn.setAttribute("aria-expanded", "true");
+            btn.setAttribute("aria-label", "Close navigation menu");
+            document.body.classList.add("mobile-menu-open");
+        }
 
-  function openMenu() {
-    nav.classList.add("mobile-open");
-    btn.classList.add("is-active");
-    btn.setAttribute("aria-expanded","true");
-    btn.setAttribute("aria-label","Close navigation menu");
-    document.body.classList.add("mobile-menu-open");
-  }
+        btn.addEventListener("click", function () {
+            nav.classList.contains("mobile-open") ? closeMenu() : openMenu();
+        });
 
-  btn.addEventListener("click", function () {
-    nav.classList.contains("mobile-open") ? closeMenu() : openMenu();
-  });
+        nav.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", closeMenu);
+        });
 
-  nav.querySelectorAll("a").forEach(function (a) {
-    a.addEventListener("click", closeMenu);
-  });
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeMenu();
-  });
-
-  window.addEventListener("resize", function () {
-    if (window.innerWidth > 900) closeMenu();
-  });
-});
-</script>
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 900) closeMenu();
+        });
+    });
+    </script>
 
 </body>
-
 </html>
