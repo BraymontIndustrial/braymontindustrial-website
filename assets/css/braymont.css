@@ -1,5 +1,5 @@
-/* =========================================================
-   BRAYMONT INDUSTRIAL — CLEAN MASTER STYLESHEET
+﻿/* =========================================================
+   BRAYMONT INDUSTRIAL â€” CLEAN MASTER STYLESHEET
    Compatible with index.html provided August 11, 2026
 ========================================================= */
 
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-light:hover { background: var(--white); color: var(--charcoal); }
 
 /* =========================================================
-   SPLASH — DESKTOP OFF
+   SPLASH â€” DESKTOP OFF
 ========================================================= */
 #braymont-splash { display: none; }
 
@@ -923,7 +923,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =========================================================
-   MOBILE — 900px AND BELOW
+   MOBILE â€” 900px AND BELOW
 ========================================================= */
 @media (max-width: 900px) {
     html { scroll-padding-top: calc(var(--mobile-header-height) + 10px); }
@@ -1182,7 +1182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =========================================================
-   HOME PAGE CONTENT REFINEMENT — FINAL
+   HOME PAGE CONTENT REFINEMENT â€” FINAL
 ========================================================= */
 
 .markets-intro {
@@ -1417,3 +1417,4 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
 }
+
